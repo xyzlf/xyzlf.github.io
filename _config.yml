@@ -4,16 +4,16 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: 闫肃
-  email: yansu0711@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  name: 七弦
+  email: lcm.hust@gmail.com
+  link: http://joshualeung.github.io
+  weibo: http://weibo.com/ming1eung
+  github: http://github.com/joshualeung
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: 莲城笔记 
+description: 生活随笔、杂记
+url: http://joshualeung.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
@@ -30,7 +30,7 @@ disqus:
   shortname: suyan-zh
 
 # 主题设置，自动激活某个标签
-active: 技术
+active: 杂记
 
 # 首页除了最新文章外显示分类
 cates: 
