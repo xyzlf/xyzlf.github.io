@@ -2,7 +2,7 @@
 layout: post
 title: "赠张永峰"
 description: ""
-category: Poem
+category: 诗词
 tags: [诗词]
 ---
 

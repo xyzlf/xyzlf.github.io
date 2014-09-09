@@ -2,7 +2,7 @@
 layout: post
 title: "春望"
 description: ""
-category: Poem
+category: 诗词
 tags: [诗词]
 ---
 

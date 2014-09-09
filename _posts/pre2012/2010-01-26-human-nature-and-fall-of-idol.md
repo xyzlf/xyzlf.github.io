@@ -2,7 +2,7 @@
 layout: post
 title: "人之本性与偶像坠落"
 description: ""
-category: Gossip
+category: 感慨
 tags: [杂谈]
 ---
 

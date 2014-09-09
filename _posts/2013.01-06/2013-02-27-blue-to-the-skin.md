@@ -2,7 +2,7 @@
 layout: post
 title: "特别的一天"
 description: ""
-category: 杂记
+category: 生活
 tags: [生活]
 ---
 

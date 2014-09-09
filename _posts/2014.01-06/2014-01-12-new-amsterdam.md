@@ -2,7 +2,7 @@
 layout: post
 title: New Amsterdam
 date: 2014-01-12 16:57:00
-category: Rock
+category: 音乐
 tags: Travis
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "在Jekyll中使用分页功能"
 description: ""
-category: Web
+category: 博客
 tags: [Jekyll, Blogging]
 ---
 

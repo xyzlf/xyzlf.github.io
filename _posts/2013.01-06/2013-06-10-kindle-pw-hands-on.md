@@ -2,7 +2,7 @@
 layout: post
 title: 入手Kindle Paperwhite小记
 description: 无
-category: 随笔
+category: 阅读
 tags: 
 - 杂感
 ---

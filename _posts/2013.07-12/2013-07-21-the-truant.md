@@ -2,7 +2,7 @@
 layout: post
 title: 电影《躲学》观感
 description: 无
-category: 随笔
+category:  电影
 tags: 
 - 杂记
 ---

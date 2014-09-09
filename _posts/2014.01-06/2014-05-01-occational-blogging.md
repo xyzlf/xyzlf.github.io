@@ -2,7 +2,7 @@
 layout: post
 title: 归博偶书
 date: 2014-05-01 16:57:00
-category: Blogging
+category: 感慨
 tags: Jekyll
 ---
 

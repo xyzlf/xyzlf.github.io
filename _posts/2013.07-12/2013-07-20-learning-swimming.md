@@ -2,7 +2,7 @@
 layout: post
 title: 游泳记
 description: 无
-category: 随笔
+category: 运动
 tags: 
 - 杂记
 ---

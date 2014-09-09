@@ -2,7 +2,7 @@
 layout: post
 title: 遗忘的生活
 date: 2014-08-30 16:57:00
-category: 杂感
+category: 感慨
 tags: 杂感
 ---
 

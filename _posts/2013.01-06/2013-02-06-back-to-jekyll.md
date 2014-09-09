@@ -2,7 +2,7 @@
 layout: post
 title: "选择Github Pages + Jekyll的理由"
 description: ""
-category: web
+category: 博客
 tags: [杂记, Github]
 ---
 

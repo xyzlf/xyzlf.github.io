@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll中的日期格式化"
 description: ""
-category: Web
+category: 博客
 tags: [Jekyll, Liquid, Blogging]
 ---
 

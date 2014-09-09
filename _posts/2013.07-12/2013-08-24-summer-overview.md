@@ -2,7 +2,7 @@
 layout: post
 title: 夏末—近景
 description: 无
-category: 随笔
+category: 感慨
 tags: 
 - 杂记
 ---

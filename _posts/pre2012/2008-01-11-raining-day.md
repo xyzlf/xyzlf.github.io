@@ -2,7 +2,7 @@
 layout: post
 title: "雨天"
 description: ""
-category: Essay
+category: 诗词
 tags: [诗词]
 ---
 

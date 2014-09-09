@@ -2,7 +2,7 @@
 layout: post
 title: "《写给大家看的设计书》阅读笔记"
 description: ""
-category: 杂记
+category: 阅读
 tags: [阅读笔记]
 ---
 

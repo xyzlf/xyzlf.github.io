@@ -2,7 +2,7 @@
 layout: post
 title: 写在高考时节
 description: 无
-category: 随笔
+category: 感慨
 tags: 
 - 杂感
 ---

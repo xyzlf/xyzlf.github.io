@@ -2,7 +2,7 @@
 layout: post
 title: 车过新洲
 date: 2014-02-05 16:57:00
-category: poem
+category: 诗词
 tags: poem
 ---
 

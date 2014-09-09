@@ -2,7 +2,7 @@
 layout: post
 title: "ICO与PNG格式互换工具：AveIconifier"
 description: ""
-category: Toolkit
+category: 软件
 tags: [图标]
 ---
 

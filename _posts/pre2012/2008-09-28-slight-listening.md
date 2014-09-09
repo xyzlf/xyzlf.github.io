@@ -2,7 +2,7 @@
 layout: post
 title: "浅听"
 description: ""
-category: Poem
+category: 诗词
 tags: [诗词]
 ---
 

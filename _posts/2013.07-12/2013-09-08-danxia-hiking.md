@@ -2,7 +2,7 @@
 layout: post
 title: 丹霞徒步记
 description: 无
-category: 随笔
+category: 旅行
 tags: 
 - 杂记
 ---

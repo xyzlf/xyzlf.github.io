@@ -2,7 +2,7 @@
 layout: post
 title: "博客又换主题拉"
 description: ""
-category: 
+category: 博客
 tags: [Jekyll, Theme]
 ---
 

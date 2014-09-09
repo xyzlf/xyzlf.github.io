@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll使用笔记"
 description: ""
-category: Web
+category: 博客
 tags: [Jekyll, Blogging]
 ---
 

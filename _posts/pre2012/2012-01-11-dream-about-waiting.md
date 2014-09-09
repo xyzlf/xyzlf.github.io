@@ -2,7 +2,7 @@
 layout: post
 title: "记梦：等待"
 description: ""
-category: Essay
+category: 诗词
 tags: [杂记]
 ---
 阴霾的五月，雨后的绿色迷漫，我依依不舍地离开。

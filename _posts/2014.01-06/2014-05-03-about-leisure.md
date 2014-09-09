@@ -2,7 +2,7 @@
 layout: post
 title: 说闲适
 date: 2014-05-03 09:57:00
-category: gossip
+category: 阅读
 tags: 杂论
 ---
 

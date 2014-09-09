@@ -2,7 +2,7 @@
 layout: post
 title: 中秋露营小记
 date: 2014-09-08 23:00:00
-category: 杂记
+category: 旅行
 tags: 杂记
 ---
 

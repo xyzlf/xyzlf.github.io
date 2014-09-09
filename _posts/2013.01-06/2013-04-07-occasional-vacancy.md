@@ -2,7 +2,7 @@
 layout: post
 title: "偶发空缺"
 description: ""
-category: 杂记
+category: 感慨
 tags: [杂记]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "自定义Chrome滚动条样式"
 description: ""
-category: Web
+category: 软件
 tags: [Chrome]
 ---
 

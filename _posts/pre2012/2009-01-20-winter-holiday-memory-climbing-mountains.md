@@ -2,7 +2,7 @@
 layout: post
 title: "寒假忆趣：爬山"
 description: ""
-category: Essay
+category: 旅行
 tags: [生活]
 ---
 

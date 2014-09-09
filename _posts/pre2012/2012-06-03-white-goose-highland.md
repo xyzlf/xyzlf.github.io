@@ -2,7 +2,7 @@
 layout: post
 title: "记梦：白鹅顶"
 description: ""
-category: 杂记
+category: 梦
 tags: [梦]
 ---
 

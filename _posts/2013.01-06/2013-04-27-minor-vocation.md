@@ -2,7 +2,7 @@
 layout: post
 title: "变味的假期"
 description: ""
-category: 随笔
+category: 感慨
 tags: [杂谈]
 ---
 
