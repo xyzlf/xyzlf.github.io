@@ -17,8 +17,8 @@ url: http://joshualeung.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
-favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+gavatar: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
+favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
 
 # google analytics 设置
 ga:
@@ -34,8 +34,6 @@ active: 杂记
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Python
-  - OpenStack
 
 # 中文本地化
 locals:
