@@ -27,10 +27,10 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: joshua-github
 
 # 主题设置，自动激活某个标签
-active: 杂记
+active: 诗词
 
 # 首页除了最新文章外显示分类
 cates: 
