@@ -59,7 +59,7 @@
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+				<img src="{{ site.gavatar }}" class="img-circle" />
 				{{ site.title }}
 			</a>
 		</div>
@@ -67,9 +67,9 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+				<li class="active"><a href="{{ site.BASE_PATH }}/">首页</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">分类</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">标签</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>

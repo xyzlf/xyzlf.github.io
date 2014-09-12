@@ -15,6 +15,10 @@ defaults:
       title: Joshua's Blog
 
 description: Stylish Jekyll Theme
+# gavatar头像及Favicon
+gavatar: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
+favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
+
 author:
   name: 七弦
   email: lcm.hust@gmail.com
@@ -22,7 +26,7 @@ author:
   twitter: szjoshua
   pinterest: joshualeung
   linkedin: joshualeung
-  bio: Coding | Photography | Reading | Travelling
+  bio: 谁谓河广，一苇杭之
   email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml
