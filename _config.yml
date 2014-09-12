@@ -1,44 +1,32 @@
-permalink: /:year/:month/:day/:title.html
-paginate: 10
-markdown: redcarpet
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# 作者信息
-author: 
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: true
+markdown: kramdown
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Joshua's Blog
+
+description: Stylish Jekyll Theme
+author:
   name: 七弦
   email: lcm.hust@gmail.com
-  link: http://joshualeung.github.io
-  weibo: http://weibo.com/ming1eung
-  github: http://github.com/joshualeung
+  github: joshualeung
+  twitter: szjoshua
+  pinterest: joshualeung
+  linkedin: joshualeung
+  bio: Coding | Photography | Reading | Travelling
+  email_md5: 726351295ec82e145928582f595aa3aa
 
-# 站点信息
-title: 莲城笔记 
-description: 生活随笔、杂记
-url: http://joshualeung.github.io
-rss_url: /pages/atom.xml
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
-# gavatar头像及Favicon
-gavatar: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
-favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
-
-# google analytics 设置
-ga:
-  id: UA-43667383-1
-  url: yansu.org
-
-# disqus 设置
-disqus:
-  shortname: joshua-github
-
-# 主题设置，自动激活某个标签
-active: 诗词
-
-# 首页除了最新文章外显示分类
-cates: 
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-  content: 目录
+BASE_PATH:

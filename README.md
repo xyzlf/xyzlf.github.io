@@ -1,18 +1,34 @@
-### 我的博客
+dbyll
+=====
 
-地址：[http://yansu.org](http://yansu.org)
+Open source stylish, minimalistic theme for jekyll.  
+Demo: http://dbtek.github.io/dbyll/
 
-### 安装说明
+## New
+Dbyll for Ghost is now available. Get it [here](https://github.com/dbtek/dbyll-ghost) now.
 
-1. fork库到自己的github
-2. 修改名字为：`username.github.io`
-3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
-4. 修改CNAME，或者删掉这个文件，使用默认域名
-5. 修改`_config.yml`配置项
-6. It's done!
+### Features
+- Responsive layout.
+- Supports tags and categories.
+- Social profile and bio of author.
+- Bootstrap based.
+- Glyphicon and Font-Awesome Icons.
+- Pagination.
+- Syntax highlighting with pygments.
+- Disqus comments.
 
-### 分支说明
 
-- 三栏布局（master分支）
-- 单栏布局（first-ui分支）
+### Download
+* [Download dbyll](https://github.com/dbtek/dbyll/archive/master.zip)
+
+### Screenshots
+
+![dbyll-screenshot](	assets/media/dbyll-ss.png)
+
+### License
+- [MIT](http://opensource.org/licenses/MIT)
+
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/dbyll/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

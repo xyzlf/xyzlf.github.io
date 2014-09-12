@@ -1,20 +1,4 @@
 ---
-layout: base
+layout: default
 ---
-<div class="row">
-  <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-    {{ page.date | date:"%Y年%m月%d日" }}
-  </div>
-  <div class="col-md-12 aside3-content">
-    {% include content.html %}
-    <hr>
-    <div id="content">
-      {{ content }}
-    </div>
-    <hr>
-    {% include duoshuo.html %}
-  </div>
-</div>
-
+{% include post.html %}
