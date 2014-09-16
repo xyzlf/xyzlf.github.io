@@ -202,3 +202,11 @@ pre.ch-inject {
     background-color: #f3f4dd;
     border-radius:10px;
 }
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+    color: RGB(0,119,34);
+    font-size: 17px;
+    font-size: 2.4rem;
+}
