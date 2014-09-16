@@ -96,7 +96,6 @@ article{
 	margin-bottom: 20px;
 	font-size: 18px;
 	line-height: 2em;
-	text-indent: 2em;
 }
 
 .post-date {
@@ -190,4 +189,16 @@ ul.dropdown-menu>li>a>i.fa {
 .home p {
     line-height: 2em;
     font-size: 18px;
+}
+pre.ch-inject {
+ font-family: Monaco, "Ubuntu Mono", "Droid Sans Mono", Consolas, serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+    overflow: auto;
+    max-width: 100%;
+    background-color: #f3f4dd;
+    border-radius:10px;
 }
