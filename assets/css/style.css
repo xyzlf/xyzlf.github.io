@@ -94,8 +94,9 @@ article{
 .article_body{
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 2em;
+	font-family: "Times New Roman", "Songti";
 }
 
 .post-date {
