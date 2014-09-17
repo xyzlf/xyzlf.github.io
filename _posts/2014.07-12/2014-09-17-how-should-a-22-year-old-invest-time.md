@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quora 精选: Life Advice: How should a 22-year-old invest time?
-date: 2014-09-08 23:00:00
+title: How should a 22-year-old invest time?
+date: 2014-09-17 10:00:00
 category: 生活
 tags: 规划
 ---
