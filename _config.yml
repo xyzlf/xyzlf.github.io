@@ -12,9 +12,9 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Joshua's Blog
+      title: 镜中的自我
 
-description: Stylish Jekyll Theme
+description: 生活、文艺与梦想
 # gavatar头像及Favicon
 gavatar: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
 favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
