@@ -10,6 +10,10 @@
       <h2>TDW Python 计算脚本生成器</h2>
       <form role="form" onsubmit="download(this['name'].value, this['text'].value)">
         <div class="form-group">
+          <label for="email">文件名:</label>
+          <input type="text" class="form-control" id="des_db" placeholder="sng_imappdev_oss" value="sng_imappdev_oss">
+        </div>
+		<div class="form-group">
           <label for="email">目标DB:</label>
           <input type="text" class="form-control" id="des_db" placeholder="sng_imappdev_oss" value="sng_imappdev_oss">
         </div>
@@ -27,12 +31,12 @@
           <!--
 		  <input type="text" class="form-control" id="pwd" placeholder="Enter password">
 		  -->
-		  <textarea class="form-control" rows="10" id="sql_text"></textarea>
+		  <textarea class="form-control" rows="12" id="sql_text"></textarea>
         </div>
         <div class="checkbox">
           <label><input type="checkbox" id="ispartition"> 目标表为分区表</label>
         </div>
-        <button type="button" class="btn btn-default" onclick="download('a', 'b')">生成</button>
+        <button type="button" class="btn btn-success" onclick="download('a', 'b')">生成</button>
       </form>
     </div>
 
@@ -61,6 +65,7 @@
         if (result_db.length == 0 || result_table.length == 0 || desc.length == 0 || sql_text.length == 0)
         {
           alert("字段不全，请检查！");
+          return;
         }
 
         data = full_replace(data, "@@des_db@@", result_db);
