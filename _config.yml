@@ -12,22 +12,23 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: 镜中的自我
+      title: Johnny的博客
 
-description: 生活、文艺与梦想
+description: 学无止境
 # gavatar头像及Favicon
-gavatar: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
-favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
+gavatar: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
+favicon: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
+# favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
 
 author:
-  name: 七弦
-  email: lcm.hust@gmail.com
-  github: joshualeung
-  twitter: szjoshua
-  pinterest: joshualeung
-  linkedin: joshualeung
-  bio: 谁谓河广，一苇杭之
-  email_md5: 726351295ec82e145928582f595aa3aa
+  name: Johnny
+  email: enjoy930429@gmail.com
+  github: enjoydream
+  twitter: enjoy_dream
+  weibo: http://weibo.com/729271608
+  QQ: 729271608
+  bio: johnny
+  email_md5: daf837849a895608386061ebedcd389b
 
 rss_path: feed.xml
 categories_path: categories.html
