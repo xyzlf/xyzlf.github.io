@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Android中使用IconFont代替icon，减小app体积
-date: 2015-05-04 12:00:00
+date: 2013-10-15 16:59:00
 category: Android
 tags: Android UI
 ---

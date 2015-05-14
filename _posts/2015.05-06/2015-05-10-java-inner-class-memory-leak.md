@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java中内部类的内存泄露问题
-date: 2015-05-10 14:23:00
+date: 2015-05-10 15:29:00
 category: Java
 tags: MemoryLeak Java Android
 ---
