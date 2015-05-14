@@ -42,19 +42,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
+			{% if site.author.email %}
+			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
-			{% if site.author.twitter %}
+			{% if site.author.weibo %}
 			<a type="button" class="navbar-toggle nav-link" href="http://weibo.com/{{ site.author.weibo }}">
 				<i class="fa fa-weibo"></i>
 			</a>
 			{% endif %}
-			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope"></i>
+			{% if site.author.github %}
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
+				<i class="fa fa-github"></i>
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
