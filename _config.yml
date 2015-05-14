@@ -12,7 +12,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Johnny的博客
+      title: JohnnyYin的博客
 
 description: 学无止境
 # gavatar头像及Favicon
