@@ -114,11 +114,11 @@
 		</ul>
 		<hr/>
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.BASE_PATH }}{{ page.url }}"></div>
+		<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.HOST }}{{ page.url }}"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
-		var duoshuoQuery = {short_name:"johnnyyin"};
+			var duoshuoQuery = {short_name:"johnnyyin"};
 			(function() {
 				var ds = document.createElement('script');
 				ds.type = 'text/javascript';ds.async = true;
@@ -127,10 +127,10 @@
 				(document.getElementsByTagName('head')[0] 
 				 || document.getElementsByTagName('body')[0]).appendChild(ds);
 			})();
-			</script>
+		</script>
 		<!-- 多说公共JS代码 end -->
 		<!-- 多说分享JS代码 start -->
-		<div class="ds-share" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-images="" data-content="" data-url="{{ site.BASE_PATH }}{{ page.url }}">
+		<div class="ds-share" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-images="" data-content="" data-url="{{ site.HOST }}{{ page.url }}">
 	    	<div class="ds-share-aside-left">
 				<div class="ds-share-aside-inner"></div>
 		    	<div class="ds-share-aside-toggle">分享到</div>
