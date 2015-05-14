@@ -22,12 +22,13 @@ favicon: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
 
 author:
   name: JohnnyYin
-  email: enjoy930429@gmail.com
-  github: enjoydream
-  twitter: enjoy_dream
-  weibo: http://weibo.com/729271608
-  QQ: 729271608
   bio: JohnnyYin
+  github: enjoydream
+  weibo: 729271608
+  wechat: enjoy_dream
+  csdn: yinzhong39
+  qq: 729271608
+  email: enjoy930429@gmail.com
   email_md5: daf837849a895608386061ebedcd389b
 
 rss_path: feed.xml

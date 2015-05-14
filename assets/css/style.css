@@ -211,3 +211,5 @@ h2, h3, h4, h5, h6 {
     font-size: 17px;
     font-size: 2.4rem;
 }
+
+#wechat_qrcode_img {width:200px;height:200px;position:fixed;left:100px;bottom:67px;cursor:pointer;display:none;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10
