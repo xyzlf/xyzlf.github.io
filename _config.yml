@@ -16,7 +16,8 @@ defaults:
 
 description: 学无止境
 # gavatar头像及Favicon
-gavatar: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
+# gavatar: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
+gavatar: /assets/ico/avatar.jpg
 favicon: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
 # favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
 
