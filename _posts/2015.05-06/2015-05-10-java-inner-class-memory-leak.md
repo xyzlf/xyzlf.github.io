@@ -2,8 +2,8 @@
 layout: post
 title: Java中内部类的内存泄露问题
 date: 2015-05-10 14:23:00
-category: Android Java
-tags: MemoryLeak
+category: Java
+tags: MemoryLeak Java Android
 ---
 **&nbsp;&nbsp;&nbsp;&nbsp;Java中内部类使用方便，但是在使用过程中，也会存在比较隐蔽的风险，以下介绍下Java内部类中可能存在的内存泄露问题。**    
 <!--more-->
