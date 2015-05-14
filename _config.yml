@@ -14,7 +14,7 @@ defaults:
     values:
       title: JohnnyYin的博客
 
-description: 学无止境
+description: 移动互联网,Android,开源
 # gavatar头像及Favicon
 # gavatar: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
 gavatar: /assets/ico/avatar.jpg
@@ -24,7 +24,7 @@ favicon: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
 author:
   name: JohnnyYin
   bio: JohnnyYin
-  github: enjoydream
+  github: JohnnyYin
   weibo: 729271608
   wechat: enjoy_dream
   csdn: yinzhong39
