@@ -6,7 +6,6 @@ exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 
-
 defaults:
   -
     scope:
@@ -14,12 +13,10 @@ defaults:
     values:
       title: JohnnyYin的博客
 
-description: 移动互联网,Android,开源
-# gavatar头像及Favicon
-# gavatar: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
+description: JohnnyYin的博客，专注移动互联网开发，开源爱好者。
+# gavatar头像及favicon
 gavatar: /assets/ico/avatar.jpg
-favicon: http://avatar.csdn.net/C/4/D/1_yinzhong39.jpg
-# favicon: http://pic.yupoo.com/24plus/E2O4V5oL/medium.jpg
+favicon: /assets/ico/avatar.jpg
 
 author:
   name: JohnnyYin
