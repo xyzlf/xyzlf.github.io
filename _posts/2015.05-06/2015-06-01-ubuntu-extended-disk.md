@@ -2,7 +2,7 @@
 layout: post
 title: Windows、Ubuntu双系统下，给Ubuntu增加磁盘空间
 date: 2015-06-01 20:51:01
-categorys: [Ubuntu]
+categories: [Ubuntu]
 tags: [Ubuntu]
 ---
 &emsp;因为本人安装的是Windows，Ubuntu双系统，所以当时给Ubuntu分配的空间比较小，现在想在Ubuntu下编译Android Rom，但是AOSP代码就是几十G，空间严重不够，因此，准备给Ubuntu增加磁盘空间。
