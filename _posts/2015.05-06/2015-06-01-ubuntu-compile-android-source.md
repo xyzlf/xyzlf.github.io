@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ununtu15.04下编译Android5.1源码
+title: Ubuntu15.04下编译Android5.1源码
 date: 2015-06-01 20:16:41
 categories: [Android, Ubuntu]
 tags: [Android, 源码]
