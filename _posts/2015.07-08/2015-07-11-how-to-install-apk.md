@@ -20,12 +20,12 @@ if (encryptionParams != null || !"file".equals(mPackageURI.getScheme()))
 ```
 这里不会进入，进入else  
 10. com.android.defcontainer.DefaultContainerService.mBinder.new Stub() {...}.getMinimalPackageInfo(String, int, long)  
-11. 先解析Manifest文件，获得包名，版本信息和安装位置等等。然后会判断是否需要验证安装包之类的。如果不需要验证安装包，直接拷贝apk文件  
+11. 先解析Manifest文件，获得包名，版本信息和安装位置等等（这里只是轻量解析，完全解析见第17步）。然后会判断是否需要验证安装包之类的。如果不需要验证安装包，直接拷贝apk文件  
 12. ret = args.copyApk(mContainerService, true);  
 13. ret = imcs.copyResource(packageURI, null, out); // 拷贝apk，注：DefaultContainerService 就是IMediaContainerService的一个实现  
 14. int copyRet = copyNativeLibrariesForInternalApp(codeFile, nativeLibraryFile); // 拷贝native文件到 /data/app-lib/ 下  
 15. com.android.server.pm.PackageManagerService.InstallParams.handleReturnCode()  
 16. com.android.server.pm.PackageManagerService.processPendingInstall(InstallArgs, int)  
-17. com.android.server.pm.PackageManagerService.installPackageLI(InstallArgs, boolean, PackageInstalledInfo)  
+17. com.android.server.pm.PackageManagerService.installPackageLI(InstallArgs, boolean, PackageInstalledInfo)，在这个方法中，会调用android.content.pm.PackageParser#parsePackage 进行Manifest的完全解析，包括Activity，service等所有节点的解析。  
 18. com.android.server.pm.PackageManagerService.FileInstallArgs.doRename(int, String, String) // 把之前的临时文件重命名为正式的文件名  
 19. 最后发送一个POST_INSTALL消息，发送ACTION_PACKAGE_ADDED或ACTION_PACKAGE_REPLACED或ACTION_MY_PACKAGE_REPLACED广播
