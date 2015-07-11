@@ -48,4 +48,5 @@ The inner class code calls these static methods whenever it needs to access the 
 
 If you're using code like this in a performance hotspot, you can avoid the overhead by declaring fields and methods accessed by inner classes to have package access, rather than private access. Unfortunately this means the fields can be accessed directly by other classes in the same package, so you shouldn't use this in public API.
 
-也就是说在内部类中对宿主类的私有成员的访问时，会生成 static 的 access$xxx 方法来对宿主类的私有成员的访问做桥接。从而会增加类的方法数以及调用的开销。
+也就是说在内部类(与内部类声明的访问权限无关)中对宿主类的private成员的访问时，会生成 static 的 access$xxx 方法来对宿主类的私有成员的访问做桥接。从而会增加类的方法数以及调用的开销。  
+解决办法是，将内部类需要访问的成员变量或方法的访问权限声明>=package，也就是非private即可。
