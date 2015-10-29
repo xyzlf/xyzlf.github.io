@@ -8,7 +8,9 @@ tags: [UI]
 ## 分发过程
      首先事件从native分发，会传递给 ViewRootImpl.WindowInputEventReceiver.onInputEvent ，然后会经过ViewRootImpl的分发到DecorView，DecorView会根据之前给Window设置的CallBack（具体可以参考Activity的启动过程系列文章），也就是Activity，会调用Activity的dispatchTouchEvent，然后Activity会调用DecorView的superDispatchTouchEvent，从而开始到ViewHierarchy的事件分发。
      ViewHierarchy中事件分发，简单来说就是ViewGroup.dispatchTouchEvent->ViewGroup.onInterceptTouchEvent->View.dispatchTouchEvent->View.OnTouchListener.onTouch->View.onTouchEvent，具体过程如下：
-<!--more-->  
+  
+<!--more-->    
+
 ## Down事件
      在 ViewGroup.dispatchTouchEvent 方法中。
      首先会判断是否拦截该事件，如果有调用过ViewGroup.requestDisallowInterceptTouchEvent，且参数为true，那么就不会去拦截，也就是不会调用ViewGroup.onInterceptTouchEvent，如果参数为false或者没有调用(默认是允许拦截)，那么会调用ViewGroup.onInterceptTouchEvent，同时根据这个方法的返回值来判断是否拦截该down事件。
