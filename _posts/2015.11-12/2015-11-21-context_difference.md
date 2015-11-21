@@ -37,6 +37,7 @@ tags: [Context]
 ### ViewContext
 参考：android.view.LayoutInflater#createViewFromTag
 如果ViewParent使用了不同的Theme之类的，就会和ViewParent使用同一个Context，否则使用 LayoutInflater 实例化时的Context，不过一般ViewContext == Activity.this。ViewContext不可能是ContextImpl，因为在ContextImpl对LAYOUT_INFLATER_SERVICE的获得是通过getOuterContext，也就是获得的是Activity，Service或Application。
+
 ### 总结：
 - android.content.ContextWrapper#getBaseContext  都获得的是ContextImpl对象。
 - Activity.getApplicationContext == Application.getApplicationContext == Service.getApplicationContext == Application.this == Activity.getApplication
