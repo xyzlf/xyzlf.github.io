@@ -37,3 +37,5 @@ BASE_PATH:
 HOST: http://johnnyyin.com
 
 excerpt_separator: <!--more-->
+
+gems: [jekyll-paginate]
