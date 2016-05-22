@@ -33,6 +33,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH: 
+HOST: http://xyzlf.github.io
 
 excerpt_separator: <!--more-->
 
