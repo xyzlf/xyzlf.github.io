@@ -6,6 +6,9 @@ categories: [Android]
 tags: [Android]
 ---
 
+记录一些常用的一些命令行，比如：Android中的adb命令行，gradle命令行，签名相关的命令行。
+<!--more-->
+
 ##  Android adb相关
 
 1、查看栈顶Activity 
