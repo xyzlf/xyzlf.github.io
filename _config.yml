@@ -11,30 +11,28 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: JohnnyYin的博客
+      title: 张利峰的博客
 
-description: JohnnyYin的博客，专注移动互联网开发，开源爱好者。
+description: 纸上得来终觉浅，绝知此事要躬行。
 # gavatar头像及favicon
 gavatar: /assets/ico/avatar.jpg
 favicon: /assets/ico/avatar.jpg
 
 author:
-  name: JohnnyYin
-  bio: JohnnyYin
-  github: JohnnyYin
-  weibo: 729271608
-  wechat: enjoy_dream
-  csdn: yinzhong39
-  qq: 729271608
-  email: enjoy930429@gmail.com
-  email_md5: daf837849a895608386061ebedcd389b
+  name: ZhangLifneg
+  bio: ZhangLifneg
+  github: xyzlf
+  weibo: zlf519578280
+  wechat: xy_zlf
+  csdn: zlfxy
+  qq: 519578280
+  email: 519578280@qq.com
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH: 
-HOST: http://yinzhong.me
 
 excerpt_separator: <!--more-->
 
