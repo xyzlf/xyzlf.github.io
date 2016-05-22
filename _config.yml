@@ -34,7 +34,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH: 
-HOST: http://johnnyyin.com
+HOST: http://yinzhong.me
 
 excerpt_separator: <!--more-->
 
