@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 常用命令行
-date: 2016-05-22 16:00:00
+date: 2016-05-21 16:00:00
 categories: [Android]
 tags: [Android]
 ---
