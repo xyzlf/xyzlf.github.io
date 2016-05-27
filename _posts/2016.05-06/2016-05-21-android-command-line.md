@@ -47,3 +47,17 @@ gradle assembleRelease
 {% highlight java %}
 jarsigner -verify -verbose -certs {apkpath} jarsigner -verify -verbose:summary -certs {apkpath}
 {% endhighlight java %}
+
+##  反编译相关
+
+1、反编译得到布局文件，资源文件
+
+下载一个apktool工具，然后 apktool d xxx.apk
+
+2、反编译Java文件
+
+（1）Apk反编译：将.apk改成.zip后缀，解压拿到dex。 
+
+（2）Mac下：brew install dex2jar， 然后用dex2jar将dex生成jar。
+
+（3）用gui工具查看：推荐https://github.com/skylot/jadx
