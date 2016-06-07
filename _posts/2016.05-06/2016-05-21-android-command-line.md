@@ -38,7 +38,7 @@ gradle :app:dependencies
 
 gradle tasks --all
 eg: gradle -q app:depIn --configuration compile --dependency appcompat-v7
-https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html
+<https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>
 
 2、打包 
 {% highlight java %}
