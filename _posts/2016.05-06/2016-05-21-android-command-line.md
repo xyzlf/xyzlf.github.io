@@ -36,8 +36,10 @@ adb -d install {apkpath}
 gradle :app:dependencies
 {% endhighlight java %}
 
-{%gradle tasks --all
-eg: gradle -q app:depIn --configuration compile --dependency appcompat-v7 %}
+{% highlight java %}
+gradle tasks --all
+eg: gradle -q app:depIn --configuration compile --dependency appcompat-v7
+{% endhighlight java %}
 <https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>
 
 2、打包 

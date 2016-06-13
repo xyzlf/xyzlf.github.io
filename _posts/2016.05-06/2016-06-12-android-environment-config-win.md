@@ -23,4 +23,12 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 从官网下载Git，<https://git-scm.com/download/win>，然后按照默认步骤一步步安装即可。
 配置SSH key文件，生成SSH key文件：<https://help.github.com/articles/generating-an-ssh-key/>
 
+记得配置用户名和邮箱：
+设置本地机器默认commit的昵称与Email. 请使用有意义的名字与email.
+
+{% highlight java %}
+git config --global user.name "tiemaocsdn"  
+git config --global user.email "tiemaocsdn@qq.com"  
+{% endhighlight java %}
+
 这个博客写得也挺好的，用中文翻译了一遍，英文不好的同学参照这里吧：<http://blog.csdn.net/renfufei/article/details/41647875>
