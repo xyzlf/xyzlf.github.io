@@ -11,7 +11,8 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 
 ##  JDK的下载及安装
 
-从官网下载最新jdk：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> .然后一步步安装，配置环境变量，这个没啥说的，一路点击下一步就OK。
+从官网下载最新jdk：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> 。
+然后一步步安装，配置环境变量，这个没啥说的，一路点击下一步就OK。
 
 ##  Android Studio的下载及安装 
 
@@ -35,4 +36,6 @@ git config --global user.email "tiemaocsdn@qq.com"
 
 ##  Notepad配置Markdown以及预览
 这篇文章写得不错：<http://www.jianshu.com/p/cdb42773fffe>
-总结起来总共两步：1、下载配置文件，format文件，导入。2、导入预览dll。
+总结起来总共两步：
+1、下载配置文件，format文件，导入。
+2、导入预览dll。
