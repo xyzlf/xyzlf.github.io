@@ -9,7 +9,7 @@ tags: [Android]
 Adb命令相关命令记录，以及一些常见的错误。
 <!--more-->
 
-##  Android adb相关
+##  常用命令
 
 1、查看栈顶Activity 
 {% highlight java %}
