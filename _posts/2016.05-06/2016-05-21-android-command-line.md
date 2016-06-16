@@ -9,26 +9,6 @@ tags: [Android]
 记录一些常用的一些命令行，比如：Android中的adb命令行，gradle命令行，签名相关的命令行。
 <!--more-->
 
-##  Android adb相关
-
-1、查看栈顶Activity 
-{% highlight java %}
-adb shell dumpsys activity adb shell dumpsys activity | grep mResumed
-{% endhighlight java %}
-
-2、通过命令行打开Activity界面 
-{% highlight java %}
-adb shell am start -n pkgname/pkgname.activity 
-{% endhighlight java %}
-
-例如：adb shell am start -n com.my.demo/.activity.MainActivity 
-     adb shell am start -n com.my.demo/com.my.demo.error.ErrorActivity
-
-3、模拟器真机同时存在的情况下，安装Apk 
-{% highlight java %}
-adb -d install {apkpath}
-{% endhighlight java %}
-
 ##  Android gradle相关
 
 1、查看依赖关系 
@@ -52,21 +32,25 @@ gradle assembleRelease
 创建key，需要用到keytool.exe (位于jdk1.6.0_24\jre\bin目录下)，使用产生的key对apk签名用到的是jarsigner.exe (位于jdk1.6.0_24\bin目录下)，把上两个软件所在的目录添加到环境变量path后，打开cmd输入
 
 {% highlight java %}
-D:\>keytool -genkey -alias demo.keystore -keyalg RSA -validity 40000 -keystore demo.keystore
-/*说明：-genkey 产生密钥
-       -alias demo.keystore 别名 demo.keystore
-       -keyalg RSA 使用RSA算法对签名加密
-       -validity 40000 有效期限4000天
-       -keystore demo.keystore */
+keytool -genkey -alias demo.keystore -keyalg RSA -validity 40000 -keystore demo.keystore
+/**说明
+	-genkey 产生密钥
+    -alias demo.keystore 别名 demo.keystore
+    -keyalg RSA 使用RSA算法对签名加密
+    -validity 40000 有效期限4000天
+    -keystore demo.keystore
+*/
 {% endhighlight java %}
 
 签名
 
 {% highlight java %}
-D:\>jarsigner -verbose -keystore {your.keystore} -signedjar {new-singed.apk}  {app-unaligned.apk} {your keyAlias}
-/*说明：-verbose 输出签名的详细信息
-       -keystore  demo.keystore 密钥库位置
-       -signedjar demor_signed.apk demo.apk keyAlias 正式签名，三个参数中依次为签名后产生的文件demo_signed，要签名的文件demo.apk和 keyAlias.*/
+jarsigner -verbose -keystore {your.keystore} -signedjar {new-singed.apk}  {app-unaligned.apk} {your keyAlias}
+/*说明：
+	-verbose 输出签名的详细信息
+    -keystore  demo.keystore 密钥库位置
+    -signedjar demor_signed.apk demo.apk keyAlias 正式签名，三个参数中依次为签名后产生的文件demo_signed，要签名的文件demo.apk和 keyAlias.
+*/
 {% endhighlight java %}
 
 查看App签名信息 
