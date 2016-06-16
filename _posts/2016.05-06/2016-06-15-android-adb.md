@@ -37,4 +37,4 @@ adb -d install {apkpath}
 
 原因：genymotion的adb设置。
 解决方案如下：
-![](assets/ico/adb_genymotion_error.png)
+![](../../assets/ico/adb_genymotion_error.png)
