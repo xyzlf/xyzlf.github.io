@@ -9,7 +9,7 @@ tags: [Android]
 从官网下拉微博SDK代码：<https://github.com/sinaweibosdk/weibo_android_sdk>。导入工程后，总是有各种编译错误。记录下遇到的问题，及解决方法~
 <!--more-->
 
-##1、libpng error
+## 1、libpng error
 
 {% highlight java %}
 :weiboSDKDemo:mergeDebugAssets
@@ -35,7 +35,7 @@ android {
 }
 {% endhighlight java %}
 
-##2、9-patch error
+## 2、9-patch error
 
 {% highlight java %}
 :weiboSDKDemo:mergeDebugResources
@@ -49,7 +49,7 @@ Error:Execution failed for task ':weiboSDKDemo:mergeDebugResources'.
 
 解决方法：修复图片 ic_login_button_blue_normal.9.png 重新设置下图片伸缩域
 
-##3、multiple dex 微博 3.0.1 bug
+## 3、multiple dex 微博 3.0.1 bug
 
 {% highlight java %}
 Error:Error converting bytecode to dex:
@@ -63,7 +63,7 @@ Error:Execution failed for task ':weiboSDKDemo:transformClassesWithDexForDebug'.
 本来这个文件不应该存在于jar里，不知微博的开发怎么搞进去的。
 <https://github.com/sinaweibosdk/weibo_android_sdk/issues/32>
 
-3、解压包步骤
+## 4、解压包步骤
 
 (1)解压jar包：
 {% highlight java %}
