@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 微博客户端导入Android Studio编译错误
+title: 微博SDK导入Android Studio编译错误
 date: 2016-06-20 02:00:00
 categories: [Android]
 tags: [Android]
 ---
 
-从官网下拉微博SDK代码：<https://github.com/sinaweibosdk/weibo_android_sdk>。导入工程后，总是有各种编译错误。记录下遇到的问题，及解决方法~
+从官网下拉微博SDK代码：<https://github.com/sinaweibosdk/weibo_android_sdk>，将工程导入Android Studio后，总是有各种编译错误。记录下遇到的问题，及相应的解决方法~
 <!--more-->
 
 ## 1、libpng error
@@ -28,9 +28,9 @@ Error:Execution failed for task ':weiboSDKDemo:mergeDebugResources'.
 apply plugin: 'com.android.application'
 
 android {
- **
-	aaptOptions{
-        cruncherEnabled = false
+	**
+	aaptOptions {
+		cruncherEnabled = false
     }
 }
 {% endhighlight java %}
@@ -47,7 +47,7 @@ Error:Execution failed for task ':weiboSDKDemo:mergeDebugResources'.
 > Some file crunching failed, see logs for details
 {% endhighlight java %}
 
-解决方法：修复图片 ic_login_button_blue_normal.9.png 重新设置下图片伸缩域
+解决方法：修复图片 ic_login_button_blue_normal.9.png 重新设置下图片伸缩域。
 
 ## 3、multiple dex 微博 3.0.1 bug
 
@@ -67,10 +67,12 @@ Error:Execution failed for task ':weiboSDKDemo:transformClassesWithDexForDebug'.
 
 (1)解压jar包：
 {% highlight java %}
-	jar xf weibosdkcore.jar
+jar xf weibosdkcore.jar
 {% endhighlight java %}
-(2)删除解压后目录里面的com/sina/weibo/sdk/BuildConfig.class
+
+(2)删除解压后目录里面的com/sina/weibo/sdk/BuildConfig.class。
+
 (3)重新打包：
 {% highlight java %}
-	jar cvf weibosdkcore.jar *
+jar cvf weibosdkcore.jar *
 {% endhighlight java %}

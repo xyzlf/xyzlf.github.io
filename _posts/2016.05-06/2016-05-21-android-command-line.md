@@ -77,4 +77,4 @@ jarsigner -verify {apkpath}
 
 （2）Mac下：brew install dex2jar， 然后用dex2jar将dex生成jar。
 
-（3）用gui工具查看：推荐<https://github.com/skylot/jadx>
+（3）用gui工具查看，推荐这个：<https://github.com/skylot/jadx>
