@@ -38,3 +38,6 @@ HOST: http://xyzlf.github.io
 excerpt_separator: <!--more-->
 
 gems: [jekyll-paginate]
+
+#解决因为时区，当天博客无法显示问题
+future: true
