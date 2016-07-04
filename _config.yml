@@ -11,7 +11,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: 张利峰的博客
+      title: xyzlf的博客
 
 description: 纸上得来终觉浅，绝知此事要躬行。
 # gavatar头像及favicon
