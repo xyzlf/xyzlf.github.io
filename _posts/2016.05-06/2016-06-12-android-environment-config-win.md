@@ -87,8 +87,8 @@ If you are using another terminal prompt, such as Git for Windows, turn on ssh-a
 设置本地机器默认commit的昵称与Email，请使用有意义的名字与Email。
 
 {% highlight java %}
-git config --global user.name "tiemaocsdn"  
-git config --global user.email "tiemaocsdn@qq.com"  
+git config --global user.name "zhanglifeng"  
+git config --global user.email "zhanglifeng@nicaifu.com"  
 {% endhighlight java %}
 
 这个博客写得也挺好的，用中文翻译了一遍，英文不好的同学参照这里吧：
