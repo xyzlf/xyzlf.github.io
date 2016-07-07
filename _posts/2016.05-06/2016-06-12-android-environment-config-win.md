@@ -34,18 +34,18 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 
 (2)Paste the text below, substituting in your GitHub email address.
 {% highlight java %}
-	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-	# Creates a new ssh key, using the provided email as a label
-	Generating public/private rsa key pair.
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# Creates a new ssh key, using the provided email as a label
+Generating public/private rsa key pair.
 {% endhighlight java %}
 	(3）When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 {% highlight java %}
-	Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 {% endhighlight java %}
 	(4)At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
 {% highlight java %}
-	Enter passphrase (empty for no passphrase): [Type a passphrase]
-	Enter same passphrase again: [Type passphrase again]
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
 {% endhighlight java %}
 
 #### Adding your SSH key to the ssh-agent
@@ -58,19 +58,19 @@ If you have GitHub for Windows installed, you can use it to clone repositories a
 
 If you are using Git Bash, turn on ssh-agent:
 {% highlight java %}
-	# start the ssh-agent in the background
-	eval "$(ssh-agent -s)"
-	Agent pid 59566
+# start the ssh-agent in the background
+eval "$(ssh-agent -s)"
+Agent pid 59566
 {% endhighlight java %}
 If you are using another terminal prompt, such as Git for Windows, turn on ssh-agent:
 {% highlight java %}
-	# start the ssh-agent in the background
-	eval $(ssh-agent -s)
-	Agent pid 59566
+# start the ssh-agent in the background
+eval $(ssh-agent -s)
+Agent pid 59566
 {% endhighlight java %}
 (2)Add your SSH key to the ssh-agent. If you used an existing SSH key rather than generating a new SSH key, you'll need to replace id_rsa in the command with the name of your existing private key file.
 {% highlight java %}
-	$ ssh-add ~/.ssh/id_rsa
+$ ssh-add ~/.ssh/id_rsa
 {% endhighlight java %}
 (3)Add the SSH key to your GitHub account.<https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
