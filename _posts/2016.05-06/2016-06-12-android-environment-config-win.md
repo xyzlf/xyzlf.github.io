@@ -28,7 +28,7 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 
 2、配置SSH key文件，生成SSH key文件：<https://help.github.com/articles/generating-an-ssh-key/>。
 
-<font color="#FF0000"><b>Generating a new SSH key</b></font>
+**<font color="#FF0000">Generating a new SSH key</font>**
 
 (1)Open Git Bash.
 
@@ -48,7 +48,7 @@ Enter passphrase (empty for no passphrase): [Type a passphrase]
 Enter same passphrase again: [Type passphrase again]
 {% endhighlight java %}
 
-<font color="#FF0000"><b>Adding your SSH key to the ssh-agent</b></font>
+**<font color="#FF0000">Adding your SSH key to the ssh-agent</font>**
 
 Before adding a new SSH key to the ssh-agent, you should have checked for existing SSH keys and generated a new SSH key.
 
@@ -74,7 +74,7 @@ $ ssh-add ~/.ssh/id_rsa
 {% endhighlight java %}
 (3)Add the SSH key to your GitHub account.<https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
-<font color="#FF0000"><b>ssh-keygen不是内部或外部命令</b></font>
+**<font color="#FF0000">ssh-keygen不是内部或外部命令</font>**
 
 解决方案：
 
