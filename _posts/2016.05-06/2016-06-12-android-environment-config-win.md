@@ -28,7 +28,7 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 
 2、配置SSH key文件，生成SSH key文件：<https://help.github.com/articles/generating-an-ssh-key/>。
 
-#### Generating a new SSH key
+###Generating a new SSH key
 
 (1)Open Git Bash.
 
@@ -38,17 +38,17 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # Creates a new ssh key, using the provided email as a label
 Generating public/private rsa key pair.
 {% endhighlight java %}
-	(3）When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+(3）When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 {% highlight java %}
 Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 {% endhighlight java %}
-	(4)At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+(4)At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
 {% highlight java %}
 Enter passphrase (empty for no passphrase): [Type a passphrase]
 Enter same passphrase again: [Type passphrase again]
 {% endhighlight java %}
 
-#### Adding your SSH key to the ssh-agent
+###Adding your SSH key to the ssh-agent
 
 Before adding a new SSH key to the ssh-agent, you should have checked for existing SSH keys and generated a new SSH key.
 
@@ -72,9 +72,9 @@ Agent pid 59566
 {% highlight java %}
 $ ssh-add ~/.ssh/id_rsa
 {% endhighlight java %}
-(3)Add the SSH key to your GitHub account.<https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
+(3)[Add the SSH key to your GitHub account.][https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/]
 
-#### ssh-keygen不是内部或外部命令
+###ssh-keygen不是内部或外部命令
 
 解决方案：
 
