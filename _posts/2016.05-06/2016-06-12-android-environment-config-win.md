@@ -28,6 +28,61 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 
 2、配置SSH key文件，生成SSH key文件：<https://help.github.com/articles/generating-an-ssh-key/>。
 
+####	Generating a new SSH key
+
+	(1)Open Git Bash.
+
+	（2)Paste the text below, substituting in your GitHub email address.
+{% highlight java %}
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	# Creates a new ssh key, using the provided email as a label
+	Generating public/private rsa key pair.
+{% endhighlight java %}
+	（3）When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+{% highlight java %}
+	Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+{% endhighlight java %}
+	(4)At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+{% highlight java %}
+	Enter passphrase (empty for no passphrase): [Type a passphrase]
+	Enter same passphrase again: [Type passphrase again]
+{% endhighlight java %}
+
+####	Adding your SSH key to the ssh-agent
+
+	Before adding a new SSH key to the ssh-agent, you should have checked for existing SSH keys and generated a new SSH key.
+
+	If you have GitHub for Windows installed, you can use it to clone repositories and not deal with SSH keys. It also comes with the Git Bash tool, which is the preferred way of running git commands on Windows.
+
+	(1)Ensure ssh-agent is enabled:
+
+	If you are using Git Bash, turn on ssh-agent:
+{% highlight java %}
+	# start the ssh-agent in the background
+	eval "$(ssh-agent -s)"
+	Agent pid 59566
+{% endhighlight java %}
+	If you are using another terminal prompt, such as Git for Windows, turn on ssh-agent:
+{% highlight java %}
+	# start the ssh-agent in the background
+	eval $(ssh-agent -s)
+	Agent pid 59566
+{% endhighlight java %}
+	(2)Add your SSH key to the ssh-agent. If you used an existing SSH key rather than generating a new SSH key, you'll need to replace id_rsa in the command with the name of your existing private key file.
+{% highlight java %}
+	$ ssh-add ~/.ssh/id_rsa
+{% endhighlight java %}
+	(3)Add the SSH key to your GitHub account.<https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
+
+#### ssh-keygen不是内部或外部命令
+
+解决方案：
+
+（1）找到Git/usr/bin目录下的ssh-keygen.exe(如果找不到，可以在计算机全局搜索)
+
+
+（2）属性-->高级系统设置-->环境变量-->系统变量,找到Path变量，进行编辑，End到最后，输入分号，粘贴复制的ssh-keygen所在的路径，保存；
+
 3、记得配置用户名和邮箱：
 设置本地机器默认commit的昵称与Email，请使用有意义的名字与Email。
 
