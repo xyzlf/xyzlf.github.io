@@ -30,6 +30,8 @@ build.gradle中的配置
     
     apply plugin: 'com.novoda.bintray-release'//添加
     
+	//推送指令
+	//gradlew clean build bintrayUpload -PbintrayUser=bintrayUser -PbintrayKey=bintrayKey -PdryRun=false
     //添加
     publish {
 	    userOrg = 'xyzlf'//bintray.com用户名
@@ -39,6 +41,41 @@ build.gradle中的配置
 	    desc = 'Oh hi, this is a nice description for a project, right?'
 	    website = 'https://github.com/xyzlf/ShareSDK'
     }
+
+由于publish需要用户名密码，为了方便上传到bintray.com，不需要每次写用户名，apikey，也可以将这些基本信息配置在本地local.properties。
+
+	buildscript {
+	    repositories {
+	        jcenter()
+	    }
+	    dependencies {
+	        //....
+	        classpath 'com.novoda:bintray-release:0.3.4'
+	    }
+	}
+	
+	apply plugin: 'com.novoda.bintray-release'//添加
+
+    Properties properties = new Properties()
+	properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+	String localBintrayUser = properties.getProperty("bintray.user")
+	String localBintrayApikey = properties.getProperty("bintray.apikey")
+
+	//推送指令
+	//gradlew clean build bintrayUpload
+	//添加
+	publish {
+	    bintrayUser = localBintrayUser   //bintray.com用户名
+	    bintrayKey = localBintrayApikey  //bintray.com apikey
+	    dryRun = false
+	    userOrg = localBintrayUser
+	    groupId = 'com.'+ localBintrayUser +'.share'//jcenter上的路径
+	    artifactId = 'sharesdk'//项目名称
+	    publishVersion = '0.0.1'//版本号
+	    desc = 'Oh hi, this is a nice description for a project, right?'
+	    website = 'https://github.com/xyzlf/ShareSDK'
+	}
 
 完整build.gradle参照：
 
@@ -50,7 +87,11 @@ build.gradle中的配置
 
 其中 bintrayUser bintrayKey你在这里<https://bintray.com>注册完成后，在用户中心可以找到。
 
+	//直接使用用户名  apikey
     gradlew clean build bintrayUpload -PbintrayUser=bintrayUser -PbintrayKey=bintrayKey -PdryRun=false
+
+	//配置了用户名 apikey
+	gradlew clean build bintrayUpload
     
 上传完成后，你能看到你上传的项目，然后发布申请，审核过程很快。实战练习，5分钟之内审核完成。然后其他开发者就可以使用了。
 
