@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Android library上传到jcenter
+title: Android aar上传到jcenter
 date: 2016-07-10 20:44:00
 categories: [Android]
 tags: [Android]
 ---
 
-在github上发布项目后，可以整理发布到jcenter，这样可以方便开发者使用。今天实战练习了一遍，主要参考文章<http://blog.csdn.net/tu_bingbing/article/details/49208873>，非常感谢这个作者的分享。 在练习过程中，还是遇到了一些问题，在这里记录一下..
+在github上发布项目后，可以整理打包成aar发布到jcenter，这样可以方便开发者使用。今天实战练习了一遍，主要参考文章<http://blog.csdn.net/tu_bingbing/article/details/49208873>，非常感谢这个作者的分享。 在练习过程中，还是遇到了一些问题，在这里记录一下..
 <!--more-->
 
 ## 项目地址
