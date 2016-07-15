@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android studio aar上传到jcenter
+title: Android Studio aar上传到jcenter
 date: 2016-07-10 20:44:00
 categories: [Android]
 tags: [Android]

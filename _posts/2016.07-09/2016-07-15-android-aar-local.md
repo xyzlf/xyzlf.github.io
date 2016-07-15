@@ -16,11 +16,11 @@ tags: [Android]
 
 ## 依赖本地aar
 
-1. 在工程目录app下面建立"libs"目录(如果没有的话)
+1、在工程目录app下面建立"libs"目录(如果没有的话)。
 
-2. 把aar文件拷入libs目录(例如：sharesdk_release_1.0.aar)
+2、把aar文件拷入libs目录(例如：sharesdk_release_1.0.aar)。
 
-3. 在工程目录app的build.gradle中加入：
+3、在工程目录app的build.gradle中加入：
 {% highlight java %}
 android {
 	...
