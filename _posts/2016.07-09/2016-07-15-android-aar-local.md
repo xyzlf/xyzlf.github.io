@@ -21,17 +21,18 @@ tags: [Android]
 2. 把aar文件拷入libs目录(例如：sharesdk_release_1.0.aar)
 
 3. 在工程目录app的build.gradle中加入：
-
-	    android {
-	    	...
-	    	repositories {
-	    		flatDir {
-	    			dirs 'libs'
-	    		}
-	    	}
-	    	...
-	    	compile(name: 'sharesdk_release_1.0', ext: 'aar') {
-	    		exclude group: 'com.android.support', module: 'appcompat-v7'
-	    	}
-	    }
+{% highlight java %}
+android {
+	...
+	repositories {
+		flatDir {
+			dirs 'libs'
+		}
+	}
+	...
+	compile(name: 'sharesdk_release_1.0', ext: 'aar') {
+		exclude group: 'com.android.support', module: 'appcompat-v7'
+	}
+}
+{% endhighlight java %}
     
