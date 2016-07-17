@@ -18,6 +18,7 @@ tags: [Android]
 2、配置NDK环境
 
 <img src="/assets/drawable/ndk_config_1.png"  alt="pic" />
+
 <img src="/assets/drawable/ndk_config_2.png"  alt="pic" />
 
 好啦，这样，NDK环境就算配置完成了。
