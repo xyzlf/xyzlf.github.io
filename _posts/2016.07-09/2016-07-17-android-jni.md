@@ -119,6 +119,11 @@ public class MainActivity extends Activity {
 }
 {% endhighlight java %}
 
+如果build过程中失败的话，在gradle.properties加入配置
+{% highlight java %}
+android.useDeprecatedNdk=true
+{% endhighlight java %}
+
 以下是运行效果图：
 
 <img src="/assets/drawable/ndk_view.png"  alt="pic" />
@@ -129,7 +134,7 @@ public class MainActivity extends Activity {
 
 至此就完成了。
 
-## 项目之间引用so
+## 项目中引用so
 以上项目编译完后，可以在app/build/intermediates/ndk/debug/lib下面找到生成的so:
 
 <img src="/assets/drawable/ndk_so.png"  alt="pic" />
@@ -137,3 +142,7 @@ public class MainActivity extends Activity {
 将这几个so，拷贝至app/src/main/jniLibs目录下：（如果没有jniLibs目录，新建一个），这样就直接引用so，可以将，jni文件下面的.h，.c文件删除了。
 
 <img src="/assets/drawable/ndk_so2.png"  alt="pic" />
+
+## 完整项目地址
+
+完整的项目地址：<https://github.com/xyzlf/JniDemo>
