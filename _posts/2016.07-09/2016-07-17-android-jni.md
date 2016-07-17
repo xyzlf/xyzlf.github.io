@@ -13,7 +13,7 @@ tags: [Android]
 
 1、在Android Studio里面先下载NDK。可能需要翻墙，如果下载失败，可以尝试去网络上找找。
 
-<img src="/assets/drawable/ndk_download.png"  alt="pic" />
+<img src="/assets/drawable/ndk_download.jpg"  alt="pic" />
 
 2、配置NDK环境
 
@@ -49,7 +49,7 @@ javah -jni com.xyzlf.jni.demo.JniUtil
 {% endhighlight java %}
 <img src="/assets/drawable/ndk_jni_h.png"  alt="pic" />
 
-在项目的src/main下面建立一个jni文件夹，将生成的com_xyzlf_jni_demo_JniUtil.h文件拷贝进去。
+以上操作如果没有问题的话，就会生成com_xyzlf_jni_demo_JniUtil.h文件。在项目的src/main下面建立一个jni文件夹，将生成的com_xyzlf_jni_demo_JniUtil.h文件拷贝进去。
 
 在jni文件夹里面，新建一个与.h对于的.c文件，名字可以随便，我取得名字为：JniUtil.c，加入以下代码：
 {% highlight java %}
@@ -79,7 +79,7 @@ ndk {
 {% endhighlight java %}
 <img src="/assets/drawable/ndk_config_3.png"  alt="pic" />
 
-在JniUtil里面引入so，记住需要跟上面gradle里面配置的名字一致，否则会找不到，完整代码如下:
+在JniUtil里面引用"NdkJniDemo"，记住需要跟上面gradle里面配置的名字一致，否则会找不到，完整代码如下:
 {% highlight java %}
 package com.xyzlf.jni.demo;
 
@@ -120,16 +120,20 @@ public class MainActivity extends Activity {
 {% endhighlight java %}
 
 以下是运行效果图：
+
 <img src="/assets/drawable/ndk_view.png"  alt="pic" />
 
 工程目录结构：
+
 <img src="/assets/drawable/ndk_jni_struct.png"  alt="pic" />
 
 至此就完成了。
 
 ## 项目之间引用so
 以上项目编译完后，可以在app/build/intermediates/ndk/debug/lib下面找到生成的so:
+
 <img src="/assets/drawable/ndk_so.png"  alt="pic" />
 
 将这几个so，拷贝至app/src/main/jniLibs目录下：（如果没有jniLibs目录，新建一个），这样就直接引用so，可以将，jni文件下面的.h，.c文件删除了。
+
 <img src="/assets/drawable/ndk_so2.png"  alt="pic" />
