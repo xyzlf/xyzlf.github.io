@@ -52,7 +52,7 @@ javah -jni com.xyzlf.jni.demo.JniUtil
 
 以上操作如果没有问题的话，就会生成com_xyzlf_jni_demo_JniUtil.h文件。在项目的src/main下面建立一个jni文件夹，将生成的com_xyzlf_jni_demo_JniUtil.h文件拷贝进去。
 
-在jni文件夹里面，新建一个与.h对于的.c文件，名字可以随便，我取得名字为：JniUtil.c，加入以下代码：
+在jni文件夹里面，新建一个与.h对应的.c文件，名字可以随便，我取得名字为：JniUtil.c，加入以下代码：
 {% highlight java %}
 //
 // Created by zhanglifeng on 2016/7/17.
@@ -71,6 +71,7 @@ JNIEXPORT jstring JNICALL Java_com_xyzlf_jni_demo_JniUtil_getStringFromJni
 {% endhighlight java %}
 
 3、Jni类的配置及引用
+
 在项目app下的build.gradle下面配置ndk:
 {% highlight java %}
 ndk {
