@@ -7,6 +7,7 @@ tags: [Android]
 ---
 
 这段时间以来，开发了两个分享SDK，遇到了许多小问题。很开心的是，都一一解决了。在这里总结一下这些坑。
+工程地址：<https://github.com/xyzlf/ShareSDK>
 <!--more-->
 
 

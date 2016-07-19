@@ -7,6 +7,7 @@ tags: [Android]
 ---
 
 这段时间以来，因为公司组件化的推动，因此决定将App中的分享模块，抽离出来，封装成SDK。一来，做到代码解耦；二来，公司内部App都可复用。提升开发效率，节省开发成本！
+工程地址：<https://github.com/xyzlf/ShareSDK>
 <!--more-->
 
 ## 1、SDK封装原则
