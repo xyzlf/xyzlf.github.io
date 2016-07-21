@@ -145,6 +145,43 @@ android.useDeprecatedNdk=true
 
 <img src="/assets/drawable/ndk_so2.png"  alt="pic" />
 
+## ERROR
+{% highlight java %}
+Error:(36) undefined reference to '__android_log_print'
+{% endhighlight java %}
+
+解决方案，在buil.gradle里面添加：ldLibs "log"//实现__android_log_print
+
+完整的build.gradle如下：
+{% highlight java %}
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "com.xyzlf.jni.demo"
+        minSdkVersion 8
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            moduleName "NdkJniDemo"          //生成的so名字
+            ldLibs "log"//实现__android_log_print
+            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种abi体系结构下的so库，目前可有可无。
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+{% endhighlight java %}
+
+
 ## 完整项目地址
 
 完整的项目地址：<https://github.com/xyzlf/JniDemo>
