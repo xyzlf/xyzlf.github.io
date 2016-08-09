@@ -9,6 +9,36 @@ tags: [Android]
 记录一些常用的一些命令行，比如：Android中的adb命令行，gradle命令行，签名相关的命令行。
 <!--more-->
 
+## Git 相关
+1、查看本地标签。
+	
+	git tag
+2、打标签。
+	
+	git tag xxx(标签名)
+	
+	eg:
+		git tag V1.0.0
+3、推送本地标签。
+
+	git push origin tag名
+	
+	eg:
+		git push origin V1.0.0
+4、删除标签。
+
+	//删除本地标签
+	git tag -d tag名
+
+	eg:
+		git tag -d V1.0.0
+
+	//删除远程标签
+	git push origin :refs/tags/标签名 
+
+	eg:
+		git push origin :refs/tags/V1.0.0
+
 ##  Android gradle相关
 
 1、查看依赖关系 
