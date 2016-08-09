@@ -12,35 +12,35 @@ tags: [Android]
 ## Git 相关
 1、查看本地标签。
 {% highlight java %}	
-	git tag
+git tag
 {% endhighlight java %}
 2、打标签。
 {% highlight java %}	
-	git tag xxx(标签名)
-	
-	eg:
-		git tag V1.0.0
+git tag xxx(标签名)
+
+eg:
+	git tag V1.0.0
 {% endhighlight java %}
 3、推送本地标签。
 {% highlight java %}
-	git push origin tag名
-	
-	eg:
-		git push origin V1.0.0
+git push origin tag名
+
+eg:
+	git push origin V1.0.0
 {% endhighlight java %}
 4、删除标签。
 {% highlight java %}
-	//删除本地标签
-	git tag -d tag名
+//删除本地标签
+git tag -d tag名
 
-	eg:
-		git tag -d V1.0.0
+eg:
+	git tag -d V1.0.0
 
-	//删除远程标签
-	git push origin :refs/tags/标签名 
+//删除远程标签
+git push origin :refs/tags/标签名 
 
-	eg:
-		git push origin :refs/tags/V1.0.0
+eg:
+	git push origin :refs/tags/V1.0.0
 {% endhighlight java %}
 ##  Android gradle相关
 
