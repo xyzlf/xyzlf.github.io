@@ -28,9 +28,11 @@ tags: [博客笔记]
 
 2、Android Design Support Library的代码实验：<http://www.jianshu.com/p/1078568e859f>
 
+3、孙福生的博文：<http://sunfusheng.com/>
+
 ### Gradle
 
-1、、Gradle的中文教程：<http://www.androidchina.net/2155.html>
+1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
 
 2、Gradle依赖项学习总结：<http://www.paincker.com/gradle-dependencies>
 
