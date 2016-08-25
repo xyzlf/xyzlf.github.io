@@ -22,7 +22,7 @@ tags: [博客笔记]
 
 ## 优秀的博文
 
-### Android
+**(1)Android**
 
 1、给Android开发者的RxJava详解：<http://gank.io/post/560e15be2dca930e00da1083>
 
@@ -30,7 +30,7 @@ tags: [博客笔记]
 
 3、孙福生的博文：<http://sunfusheng.com/>
 
-### Gradle
+**(2)Gradle**
 
 1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
 
