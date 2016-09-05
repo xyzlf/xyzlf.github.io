@@ -19,6 +19,8 @@ tags: [博客笔记]
 
 <img src="/assets/drawable/hukai_android_optimization.png"  alt="pic" />
 
+3、各种完整开源项目，泡在网上的日子：<http://www.jcodecraeer.com/plus/list.php?tid=31&codecategory=22000>
+
 
 ## 优秀的博文
 
@@ -29,6 +31,8 @@ tags: [博客笔记]
 2、Android Design Support Library的代码实验：<http://www.jianshu.com/p/1078568e859f>
 
 3、孙福生的博文：<http://sunfusheng.com/>
+
+4、Android Cool Posts：（Facebook工程师是如何改进他们Android客户端的...）<http://greenrobot.me/>
 
 **(2)Gradle**
 
