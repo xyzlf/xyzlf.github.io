@@ -11,7 +11,7 @@ tags: [博客笔记]
 
 ## 学习教程类
 
-1、Android自定义View教程目录：<http://www.gcssloop.com/1970/01/CustomViewIndex/>
+1、Android自定义View教程目录：<http://www.gcssloop.com>
 
 <img src="/assets/drawable/android_custom_view_source.png"  alt="pic" />
 
