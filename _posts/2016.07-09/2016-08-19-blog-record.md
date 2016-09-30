@@ -34,6 +34,10 @@ tags: [博客笔记]
 
 4、Android Cool Posts：（Facebook工程师是如何改进他们Android客户端的...）<http://greenrobot.me/>
 
+5、Android 面试总结：<http://www.jianshu.com/p/89f19d67b348>
+
+6、Cboy Blog 专注于移动开发，分享技术，共享快乐：<http://www.cboy.me/>
+
 **(2)Gradle**
 
 1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
