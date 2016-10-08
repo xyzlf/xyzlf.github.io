@@ -111,3 +111,21 @@ jarsigner -verify {apkpath}
 （2）Mac下：brew install dex2jar， 然后用dex2jar将dex生成jar。
 
 （3）用gui工具查看，推荐这个：<https://github.com/skylot/jadx>
+
+##	Java
+
+1、查看字节码详细信息
+{% highlight java %}
+javap -v FileUtils.class
+{% endhighlight java %}	
+
+2、解压jar包：
+{% highlight java %}
+jar xf weibosdkcore.jar
+{% endhighlight java %}
+
+3、重新打包：
+{% highlight java %}
+jar cvf weibosdkcore.jar *
+{% endhighlight java %}
+
