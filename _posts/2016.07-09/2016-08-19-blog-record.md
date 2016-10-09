@@ -38,6 +38,8 @@ tags: [博客笔记]
 
 6、Cboy Blog 专注于移动开发，分享技术，共享快乐：<http://www.cboy.me/>
 
+7、Activity到底是什么时候显示到屏幕上的呢：<http://blog.desmondyao.com/android-show-time/?from=timeline&isappinstalled=0>
+
 **(2)Gradle**
 
 1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
