@@ -38,17 +38,22 @@ android {
 
 ## Module依赖aar
 
-当工程大了的时候，会有多个Module。比如一个Demo工程，下面有module: app，userlib，downloadlib，frameworklib。如果userlib，downloadlib都需要依赖一个aar，为了不每个module里面放置一份，可以将aar给frameworklib依赖，然后其他module依赖frameworklib即可。
+当工程大了的时候，会有多个Module。比如一个Demo，工程目录结构如下：
+Demo
+    |- app
+	|- userlib
+	|- downloadlib
+	|- frameworklib
 
-配置在Demo目录下的build.gradle里面加入下配置：
+如果userlib，downloadlib都需要依赖一个本地aar，为了不每个module里面放置一份，可以将aar给frameworklib依赖，然后其他module依赖frameworklib即可。
+
+但是需要修改根目录的build.gradle也就是Demo目录下的的build.gradle，加上如下配置：
 {% highlight java %}
 buildscript {
    ... 
 }
 allprojects {
-
     repositories {
-
         flatDir {
             dirs '../frameworklib/libs'
         }
