@@ -40,6 +40,10 @@ tags: [博客笔记]
 
 7、Activity到底是什么时候显示到屏幕上的呢：<http://blog.desmondyao.com/android-show-time/?from=timeline&isappinstalled=0>
 
+8、Coder 猿，改变世界的动物！ <http://www.blogfshare.com/>
+
+9、dodola Tinker分析：<https://www.zybuluo.com/dodola/note/554061>
+
 **(2)Gradle**
 
 1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
