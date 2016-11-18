@@ -44,6 +44,12 @@ tags: [博客笔记]
 
 9、dodola Tinker分析：<https://www.zybuluo.com/dodola/note/554061>
 
+10、2016优秀开源库集：<http://www.jianshu.com/p/3baf4b4f34b6>
+
+11、性能优化集结篇：<http://blog.lmj.wiki/2016/11/06/app-opti/app_opt_summary/>
+
+12、安卓特殊控件处理方式：<http://www.diycode.cc/topics/429>
+
 **(2)Gradle**
 
 1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
