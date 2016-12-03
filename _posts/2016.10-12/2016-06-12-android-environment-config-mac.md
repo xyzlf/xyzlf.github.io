@@ -14,6 +14,7 @@ Mac下面的开发环境配置，jdk的下载安装，Android Studio的下载安
 Mac下一般带有JDK环境的，我买的16款新Mac发现没有JDK，因此我从官网下载了JDK7，下载了JDK8安装。
 
 JDK7官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>
+
 JDK8官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> 
 
 
@@ -31,6 +32,7 @@ JDK8官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8
 
 2、下载完成Android SDK后，配置下adb命令的路径。具体步骤可参照：<http://jingyan.baidu.com/article/59703552c0f8818fc1074041.html>
 
+{% highlight java %}
 	(1)在用户的HOME目录下，找到.bash_profile文件，如果没有该文件就创建一个 touch .bash_profile。
 
 	(2)打开.bash_profile文件：open -e .bash_profile，进行路径配置。
@@ -42,7 +44,10 @@ JDK8官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8
 	export PATH=${PATH}:/Users/zhanglifeng/Android/platform-tools
 	export PATH=${PATH}:/Users/zhanglifeng/Android/tools
 
-	(4)打开终端，试试adb命令是否生效。
+	(4)保存配置，更新配置环境变量：source .bash_profile。
+
+	(5)打开终端，试试adb命令是否生效。
+{% endhighlight java %}
 
 
 ##  Git的配置
