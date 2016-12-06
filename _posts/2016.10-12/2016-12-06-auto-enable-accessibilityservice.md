@@ -172,7 +172,8 @@ public class dump {
 
 首先找一台Android手机（无需root）,然后需要安装360手机助手。然后通过如下命令行，然后你就会发现手助的“智能安装”开关打开了，在设置的辅助页面，也发现辅助功能开关打开了。
 
-执行命令行：
+**命令行**
+
 {% highlight java %}
 
 adb shell
@@ -183,7 +184,7 @@ settings put secure accessibility_enabled 1
 
 {% endhighlight java %}
 
-效果图如下：
+**效果图**
 
 <img src="/assets/drawable/360_zhushou1.png"  alt="pic" />
 
