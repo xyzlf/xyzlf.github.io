@@ -184,11 +184,7 @@ settings put secure accessibility_enabled 1
 
 **效果图**
 
-<img src="/assets/drawable/360_zhushou1.png"  alt="pic" />
-
-<img src="/assets/drawable/360_zhushou2.png"  alt="pic" />
-
-<img src="/assets/drawable/setting.png"  alt="pic" />
+<img src="/assets/drawable/360_zhushou1.png"  alt="pic" /><img src="/assets/drawable/360_zhushou2.png"  alt="pic" /><img src="/assets/drawable/setting.png"  alt="pic" />
 
 
 ##  参考文献
