@@ -102,11 +102,11 @@ android {
 
 运行HelloWorld.dex需要一部root手机，我身边没有root的手机，所以我用Genymotion的模拟器，这个模拟器特别好用，推荐~
 
-(1)将HelloWorld.dex push到/data/local/tmp目录下面。
+（1）将HelloWorld.dex push到/data/local/tmp目录下面。
 
 <img src="/assets/drawable/adm.png"  alt="pic" />
 
-(2)执行HelloWorld.dex。
+（2）执行HelloWorld.dex。
 
 {% highlight java %}
 
@@ -179,6 +179,47 @@ adb shell
 settings put secure enabled_accessibility_services com.qihoo.appstore/com.qihoo.appstore.accessibility.AppstoreAccessibility
 
 settings put secure accessibility_enabled 1
+
+{% endhighlight java %}
+
+**代码实现**
+
+按照上面的教程，执行如下java代码：
+
+{% highlight java %}
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Helloworld {
+    public static void main(String[] args) {
+        System.out.println("Hello, I am started by app_process!");
+        String cmd1 = "settings put secure enabled_accessibility_services com.qihoo.appstore/com.qihoo.appstore.accessibility.AppstoreAccessibility";
+        String cmd2 = "settings put secure accessibility_enabled 1";
+        execShell(cmd1);
+        execShell(cmd2);
+    }
+
+    private static void execShell(String cmd) {
+        try {
+            Process p = Runtime.getRuntime().exec(cmd);
+            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String readLine = br.readLine();
+            while (readLine != null) {
+                System.out.println(readLine);
+                readLine = br.readLine();
+            }
+            if (br != null) {
+                br.close();
+            }
+            p.destroy();
+            p = null;
+        } catch (IOException e) {            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+}
 
 {% endhighlight java %}
 
