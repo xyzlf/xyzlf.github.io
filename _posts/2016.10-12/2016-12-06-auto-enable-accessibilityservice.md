@@ -18,11 +18,22 @@ tags: [Android]
 最简单不过的实例了，HelloWorld.java，记住 **不要写包名** ，原因可以见后面的错误说明。
 
 {% highlight java %}
-	public class HelloWorld {
+
+public class HelloWorld {
+
     public static void main(String[] args) {
         System.out.println("Hello, I am started by app_process!");
+        while (true) {
+            try {
+                Thread.sleep(1500);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            System.out.println("I am running HelloWorld.^_^");
+        }
     }
 }
+
 {% endhighlight java %}
 
 **生成Dex命令**
@@ -156,3 +167,26 @@ public class dump {
 {% endhighlight java %}
 
 和前面demo一样编译到Android下运行，查看结果，发现可以正常输出，说明app_process启动的Java程序的确具有shell级别的权限(其实其Uid就是shell)。
+
+##  360手助黑科技实践操作
+
+首先找一台Android手机（无需root）,然后需要安装360手机助手。然后通过如下命令行，然后你就会发现手助的“智能安装”开关打开了，在设置的辅助页面，也发现辅助功能开关打开了。
+
+执行命令行：
+{% highlight java %}
+
+adb shell
+
+settings put secure enabled_accessibility_services com.qihoo.appstore/com.qihoo.appstore.accessibility.AppstoreAccessibility
+
+settings put secure accessibility_enabled 1
+
+{% endhighlight java %}
+
+效果图如下：
+
+<img src="/assets/drawable/360_zhushou1.png"  alt="pic" />
+
+<img src="/assets/drawable/360_zhushou2.png"  alt="pic" />
+
+<img src="/assets/drawable/setting.png"  alt="pic" />
