@@ -96,7 +96,17 @@ android {
 
 <img src="/assets/drawable/error_has_pkgname.png"  alt="pic" />
 
-这个问题是因为写的HelloWorld.java带了包名，至于为啥带了包名就不行，暂时没明白，后续再说吧。去除包名，重新编译就OK了。这样就由class生成了dex了。 HelloWorld.java-->HelloWorld.class-->HelloWorld.dex。
+这个问题是因为写的HelloWorld.java带了包名，然后编译路径不对应，如果在根目录下面，不加包名包名，编译就OK了。有报名的情况如下解决：
+
+以D盘为例，在D盘根目录新建目录 com\xyzlf\myapp （该路径跟类包名路径保持一致），然后将HelloWorld.class放在该目录下面，接着执行如下命令就OK了。
+
+{% highlight java %}
+
+D:\>dx --dex --output=D:\HelloWorld.dex com\xyzlf\myapp\HelloWorld.class
+
+{% endhighlight java %}
+
+这样就由class生成了dex了。 HelloWorld.java-->HelloWorld.class-->HelloWorld.dex。
 
 **运行HelloWorld.dex**
 
