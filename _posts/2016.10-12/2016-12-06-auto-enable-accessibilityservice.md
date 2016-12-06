@@ -6,7 +6,7 @@ categories: [Android]
 tags: [Android]
 ---
 
-看完这篇文章[揭秘360手机助手未经用户同意，自动开启辅助的“黑科技”](http://mp.weixin.qq.com/s/QW6oNOFI0HlJmMCuFSFYKg) ，觉得挺有意思的，动手实践操作了一遍，还是遇到蛮多问题，学习到了不少东西！做技术，动手更重要~
+看完这篇文章[揭秘360手机助手未经用户同意，自动开启辅助的“黑科技”](http://mp.weixin.qq.com/s/QW6oNOFI0HlJmMCuFSFYKg) ，觉得挺有意思的，动手实践操作了一遍，还是遇到蛮多问题，学习到了不少东西！做技术，动手更重要~ 再此，灰常感谢大神的分享。
 <!--more-->
 
 ##  Android独立运行Java程序
@@ -70,9 +70,7 @@ javac -source 1.7 -target 1.7 C:\Users\Venscor\Desktop\app_process\dump.java
 
 在我机器上，没有1.7的jdk。我就用Android Studio生成一个项目，然后通过Android Studio的rebuild project自动编译生成class。
 
-<img src="/assets/drawable/as_rebuild_project.png"  alt="pic" />  
-
-<img src="/assets/drawable/as_build.png"  alt="pic" />
+<img src="/assets/drawable/as_rebuild_project.png"  alt="pic" />  <img src="/assets/drawable/as_build.png"  alt="pic" />
 
 如果还会出现jdk版本不匹配问题，可以在build.gradle里面指定编译环境。
 
@@ -98,7 +96,7 @@ android {
 
 <img src="/assets/drawable/error_has_pkgname.png"  alt="pic" />
 
-这个问题是因为写的HelloWorld.java带了包名，至于为啥带了包名就不行，暂时没明白，后续再说吧。去除包名，重新编译就OK了。这样就由 HelloWorld.java-->HelloWorld.class-->HelloWorld.dex。
+这个问题是因为写的HelloWorld.java带了包名，至于为啥带了包名就不行，暂时没明白，后续再说吧。去除包名，重新编译就OK了。这样就由class生成了dex了。 HelloWorld.java-->HelloWorld.class-->HelloWorld.dex。
 
 **运行HelloWorld.dex**
 
@@ -191,3 +189,18 @@ settings put secure accessibility_enabled 1
 <img src="/assets/drawable/360_zhushou2.png"  alt="pic" />
 
 <img src="/assets/drawable/setting.png"  alt="pic" />
+
+
+##  参考文献
+
+揭秘360手机助手未经用户同意，自动开启辅助的“黑科技”：<http://mp.weixin.qq.com/s/QW6oNOFI0HlJmMCuFSFYKg>
+
+Android Accessibility安全性研究报告：<http://blogs.360.cn/360mobile/2016/09/07/research_of_accessibility/>
+
+Android上app_process启动java进程：<http://blog.csdn.net/u010651541/article/details/53163542>
+
+Android静默安装实现方案，仿360手机助手秒装和智能安装功能：<http://blog.csdn.net/guolin_blog/article/details/47803149#reply>
+
+使用dx命令在cmd环境下执行的正确方法：<http://www.tuicool.com/articles/7ZrMjm>
+ 
+ 
