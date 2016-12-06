@@ -13,7 +13,7 @@ tags: [Android]
 
 在看到这篇文章前，没想过纯java程序能够在Android上运行。这篇文章有详细教程，[Android上app_process启动java进程](http://blog.csdn.net/u010651541/article/details/53163542) 。我参照着这个文章进行了实践操作，记录下遇到的问题。
 
-**实例讲解**
+**一、实例讲解**
 
 最简单不过的实例了HelloWorld.java
 
@@ -36,7 +36,7 @@ public class HelloWorld {
 
 {% endhighlight java %}
 
-**生成Dex命令**
+**二、生成Dex命令**
 
 {% highlight java %}
 
@@ -108,7 +108,7 @@ D:\>dx --dex --output=D:\HelloWorld.dex com\xyzlf\myapp\HelloWorld.class
 
 这样就由class生成了dex了。 HelloWorld.java-->HelloWorld.class-->HelloWorld.dex。
 
-**运行HelloWorld.dex**
+**三、运行HelloWorld.dex**
 
 运行HelloWorld.dex需要一部root手机，我身边没有root的手机，所以我用Genymotion的模拟器，这个模拟器特别好用，推荐~
 
@@ -134,11 +134,11 @@ app_process -Djava.class.path=HelloWorld.dex  /data/local/tmp HelloWorld
 
 <img src="/assets/drawable/ps.png"  alt="pic" />
 
-**被启动的Java的Pid,Uid与权限**
+**四、被启动的Java的Pid,Uid与权限**
 
 <img src="/assets/drawable/ps_view.png"  alt="pic" />
 
-**启动的Java程序拥有的权限及Uid**
+**五、启动的Java程序拥有的权限及Uid**
 
 adb shell中，dumpsys activity命令是查看Activity栈信息的，只有shell权限(可能有shell权限也不行，必须Uid为shell，没有去看)才能调用。所以可以通过这个来验证启动的Java程序是否真的运行于shell的Uid下，测试源代码如下：
 
@@ -180,7 +180,7 @@ public class dump {
 
 首先找一台Android手机（无需root）,然后需要安装360手机助手。然后通过如下命令行，然后你就会发现手助的“智能安装”开关打开了，在设置的辅助页面，也发现辅助功能开关打开了。
 
-**命令行**
+**一、命令行**
 
 {% highlight java %}
 
@@ -192,7 +192,7 @@ settings put secure accessibility_enabled 1
 
 {% endhighlight java %}
 
-**代码实现**
+**二、代码实现**
 
 按照上面的教程，执行如下java代码：
 
@@ -233,7 +233,7 @@ public class Helloworld {
 
 {% endhighlight java %}
 
-**效果图**
+**三、效果图**
 
 <img src="/assets/drawable/360_zhushou1.png"  alt="pic" /><img src="/assets/drawable/360_zhushou2.png"  alt="pic" /><img src="/assets/drawable/setting.png"  alt="pic" />
 
