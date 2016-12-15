@@ -36,17 +36,9 @@ Mac下面的开发环境配置，jdk的下载安装，Android Studio的下载安
 
 Apktool的github地址：<https://github.com/iBotPeaches/Apktool>
 
-官网教程地址：<https://ibotpeaches.github.io/Apktool/install/>，apktool版本列表官网地址：<https://bitbucket.org/iBotPeaches/apktool/downloads>
+官网教程地址：<https://ibotpeaches.github.io/Apktool/install/>
 
-	## Installation for Apktool
-
-	Mac OS X:
-	Download Mac [wrapper script](https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/osx/apktool) (Right click, Save Link As apktool)
-	Download apktool-2 ([find newest here](https://bitbucket.org/iBotPeaches/apktool/downloads))
-	Rename downloaded jar to apktool.jar
-	Move both files (apktool.jar & apktool) to /usr/local/bin (root needed)
-	Make sure both files are executable (chmod +x)
-	Try running apktool via cli
+apktool版本列表官网地址：<https://bitbucket.org/iBotPeaches/apktool/downloads>
 
 
 ## Homebrew的安装配置
