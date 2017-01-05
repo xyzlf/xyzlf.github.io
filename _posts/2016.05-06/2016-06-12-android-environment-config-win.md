@@ -14,6 +14,10 @@ Windows下面的开发环境配置，jdk安装，Android Studio的安装，以�
 从官网下载最新jdk：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> 。
 然后一步步安装，配置环境变量，这个没啥说的，一路点击下一步就OK。
 
+JDK7官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>
+
+JDK8官网地址：<http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> 
+
 ##  Android Studio的下载及安装 
 
 1、国内网络目前还是需要翻墙才能访问，所以呐先安装一个lantern吧，里面有各个平台的版本，挺好用的：<https://github.com/getlantern/lantern>。
