@@ -21,6 +21,10 @@ tags: [博客笔记]
 
 3、各种完整开源项目，泡在网上的日子：<http://www.jcodecraeer.com/plus/list.php?tid=31&codecategory=22000>
 
+4、一起来使用kotlin开发完整客户端：<http://androidwing.net/index.php/148>
+
+5、RxJava系列：<https://zhuanlan.zhihu.com/p/24717157>
+
 
 ## 优秀的博文
 
