@@ -48,3 +48,8 @@ adb server version (32) doesn't match this client (36); killing...
 解决方案如下：
 
 <img src="/assets/drawable/adb_genymotion_error.jpg"  alt="pic" />
+
+
+## Adb相关资料
+
+《Android ADB命令?这一次我再也不死记了！》：<http://mp.weixin.qq.com/s/fWaa1rutwfoIIrje8RfWBw>
