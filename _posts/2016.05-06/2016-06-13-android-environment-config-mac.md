@@ -6,7 +6,7 @@ categories: [Android]
 tags: [Android]
 ---
 
-Mac下面的开发环境配置，jdk的下载安装，Android Studio的下载安装，Android SDK的安装配置，git的配置。具体步骤跟Windows环境下差不太多，Mac是自带git，配置下就行了，详细内容可以参照这篇文章：[Windows开发环境配置](http://xyzlf.github.io/2016/06/12/android-environment-config-win.html)
+Mac下面的开发环境配置:jdk的下载安装，Android Studio的下载安装及配置。
 <!--more-->
 
 ## Android SDK的下载与adb命令的配置
@@ -30,15 +30,6 @@ Mac下面的开发环境配置，jdk的下载安装，Android Studio的下载安
 	(4)保存配置，更新配置环境变量：source .bash_profile。
 
 	(5)打开终端，试试adb命令是否生效。
-
-
-## Apktool工具的配置
-
-Apktool的github地址：<https://github.com/iBotPeaches/Apktool>
-
-官网教程地址：<https://ibotpeaches.github.io/Apktool/install/>
-
-apktool版本列表官网地址：<https://bitbucket.org/iBotPeaches/apktool/downloads>
 
 
 ## Homebrew的安装配置

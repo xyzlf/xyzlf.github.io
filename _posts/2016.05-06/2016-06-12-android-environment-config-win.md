@@ -6,7 +6,7 @@ categories: [Android]
 tags: [Android]
 ---
 
-Windows下面的开发环境配置，jdk安装，Android Studio的安装，以及git的安装及配置~
+Windows下面的开发环境配置:jdk安装，Android Studio的安装~
 <!--more-->
 
 ##  JDK的下载及安装
