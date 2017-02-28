@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac开发环境配置
-date: 2016-12-03 13:16:00
+date: 2016-06-13 13:16:00
 categories: [Android]
 tags: [Android]
 ---

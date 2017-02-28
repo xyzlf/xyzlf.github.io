@@ -11,17 +11,14 @@ tags: [Android]
 
 ## Git 操作
 
-### 1、查看本地标签。
+### (1)查看本地标签。
 {% highlight java %}
-	
 git tag
-
 {% endhighlight java %}
 
 
-### 2、打标签。
+### (2)打标签。
 {% highlight java %}	
-
 git tag xxx(标签名)
 
 eg:
@@ -30,9 +27,8 @@ eg:
 {% endhighlight java %}
 
 
-### 3、推送本地标签。
+### (3)推送本地标签。
 {% highlight java %}
-
 git push origin tag名
 
 eg:
@@ -41,7 +37,7 @@ eg:
 {% endhighlight java %}
 
 
-### 4、删除标签。
+### (4)删除标签。
 {% highlight java %}
 
 //删除本地标签

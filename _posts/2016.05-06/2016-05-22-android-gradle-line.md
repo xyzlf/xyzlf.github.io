@@ -9,7 +9,7 @@ tags: [Android]
 记录一些常用的Gradle命令行。
 <!--more-->
 
-##  gradle相关操作
+##  相关操作
 
 1、查看依赖关系 
 
@@ -26,7 +26,6 @@ eg: gradle -q app:depIn --configuration compile --dependency appcompat-v7
 
 {% endhighlight java %}
 
-<https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>
 
 2、打包 
 
@@ -36,9 +35,11 @@ gradle assembleRelease
 
 {% endhighlight java %}
 
-##  gradle相关资料
+##  相关资料
 
 Gradle官方文档：<http://tools.android.com/tech-docs/new-build-system/user-guide>
+
+Gradle文档：<<https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>>
 
 Gradle的中文教程：<http://www.androidchina.net/2155.html>
 

@@ -11,9 +11,9 @@ tags: [Android]
 
 ##  Android 签名相关操作
 
-###1、创建Key
+### 1、创建Key
 
-创建key，需要用到keytool.exe (位于jdk1.6.0_24\jre\bin目录下)，使用产生的key对apk签名用到的是jarsigner.exe (位于jdk1.6.0_24\bin目录下)，把上两个软件所在的目录添加到环境变量path后，打开cmd输入
+创建key，需要用到keytool.exe (位于jdk1.6.0_24\jre\bin目录下)，使用产生的key对apk签名用到的是jarsigner.exe (位于jdk1.6.0_24\bin目录下)，把上两个软件所在的目录添加到环境变量path后，打开cmd输入如下命令：
 
 {% highlight java %}
 
@@ -37,7 +37,7 @@ keytool -genkey -alias demo.keystore -keyalg RSA -validity 40000 -keystore demo.
 
 {% endhighlight java %}
 
-###2、签名
+### 2、签名
 
 {% highlight java %}
 
@@ -57,7 +57,7 @@ jarsigner -verbose -keystore {your.keystore} -signedjar {new-singed.apk}  {app-u
 
 {% endhighlight java %}
 
-###3、查看App签名信息 
+### 3、查看App签名信息 
 
 {% highlight java %}
 
@@ -67,7 +67,7 @@ jarsigner -verify -verbose:summary -certs {apkpath}
 
 {% endhighlight java %}
 
-###4、验证签名
+### 4、验证签名
 {% highlight java %}
 
 jarsigner -verify {apkpath}
