@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git常用命令行
+title: Git相关
 date: 2016-05-21 16:00:00
 categories: [Android]
 tags: [Android]
@@ -11,13 +11,15 @@ tags: [Android]
 
 ## Git 操作
 
-### (1)查看本地标签。
+(1)查看本地标签。
+
 {% highlight java %}
 git tag
 {% endhighlight java %}
 
 
-### (2)打标签。
+(2)打标签。
+
 {% highlight java %}	
 git tag xxx(标签名)
 
@@ -27,7 +29,8 @@ eg:
 {% endhighlight java %}
 
 
-### (3)推送本地标签。
+(3)推送本地标签。
+
 {% highlight java %}
 git push origin tag名
 
@@ -37,7 +40,8 @@ eg:
 {% endhighlight java %}
 
 
-### (4)删除标签。
+(4)删除标签。
+
 {% highlight java %}
 
 //删除本地标签
@@ -127,7 +131,7 @@ git config --global user.email "zhanglifeng@nicaifu.com"
 <http://blog.csdn.net/renfufei/article/details/41647875>
 
 
-## Git 相关资料
+## 相关资料
 
 Pro Git（中文版）： <http://git.oschina.net/progit/>
 
