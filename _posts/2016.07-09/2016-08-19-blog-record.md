@@ -54,11 +54,6 @@ tags: [博客笔记]
 
 12、安卓特殊控件处理方式：<http://www.diycode.cc/topics/429>
 
-**(2)Gradle**
-
-1、Gradle的中文教程：<http://www.androidchina.net/2155.html>
-
-2、Gradle依赖项学习总结：<http://www.paincker.com/gradle-dependencies>
 
 ## 其他
 
