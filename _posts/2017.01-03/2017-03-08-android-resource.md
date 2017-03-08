@@ -66,3 +66,10 @@ Github地址：<https://github.com/xyzlf/MultiLanguage>
 
 	}
 {% endhighlight java %}
+
+# 参考资料
+
+Android App 多语言切换：<http://jaeger.itscoder.com/android/2016/05/14/switch-language-on-android-app.html>
+该童鞋提供了EventBus方式，刷新页面的思路，我觉得挺好的。
+
+木偶然-Android app应用多语言切换功能实现：<http://www.cnblogs.com/popqq520/p/5498990.html>
