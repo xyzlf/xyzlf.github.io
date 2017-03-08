@@ -6,7 +6,7 @@ categories: [Android]
 tags: [Android]
 ---
 
-之前做国际化App的时候，App内部一般会要求有个多语言设置功能，做国内App，很少遇到添加这个功能。对于多语言这个功能，本来来说价值不大，但对于测试来说，可以方便测试多语言适配。之前做过，整理整理。
+之前做国际化App的时候，App内部一般会要求有个多语言设置功能，做国内App，很少遇到添加这个功能。对于多语言这个功能，个人觉得价值不大，但对于测试来说，可以方便测试多语言适配。之前做过这个功能，整理整理。
 
 在做App开发过程中，有一次测试过来说，系统字体的大小更换，会对App造成很大的适配问题，为了一劳永逸，采用了一个比较trick的方法，也分享下，希望能给有需要的人一些帮助。
 <!--more-->
@@ -15,12 +15,13 @@ tags: [Android]
 ##  App多语言更换
 
 - 效果图
+
 <img src="/assets/drawable/language_1.png"  alt="pic" />
 <img src="/assets/drawable/language_2.png"  alt="pic" />
 
 - 项目地址
 
-多语言更换项目地址：<https://github.com/xyzlf/MultiLanguage>
+Github地址：<https://github.com/xyzlf/MultiLanguage>
 
 ## App字体不受系统字体大小影响
 
