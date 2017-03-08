@@ -39,7 +39,7 @@ gradle assembleRelease
 
 Gradle官方文档：<http://tools.android.com/tech-docs/new-build-system/user-guide>
 
-Gradle文档：<<https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>>
+Gradle文档：<https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html>
 
 Gradle的中文教程：<http://www.androidchina.net/2155.html>
 
