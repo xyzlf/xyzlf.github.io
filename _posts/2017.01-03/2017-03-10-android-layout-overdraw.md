@@ -16,27 +16,27 @@ App的性能指标按照我的理解可以分为以下几个部分（不一定�
 
 - App包大小
 
-- 布局流程度：包括UI层级，Overdraw
+- 页面的流畅度：使用流畅不掉帧。（涉及UI层级，Overdraw）
 
 - 内存占用
 
 - 耗电
 
-本文主要从UI层级，及查看界面是否过度绘制了方面优化下App。
+本文主要从UI层级，查看界面是否过度绘制了方面优化下App。
 
 ##  官方资料
 
-在手机设置的开发者选项中，打开GPU（图形处理单元）调试开关，步骤如下：
+在手机设置 - 开发者选项 - 打开GPU（图形处理单元）调试开关，步骤如下：
 	
 	On your mobile device, go to Settings and tap Developer Options.
 	In the Hardware accelerated rendering section, select Debug GPU Overdraw.
 	In the Debug GPU overdraw popup, select Show overdraw areas.
 
-打开GPU调试开关，进入App之后，界面会显示对应的颜色值，颜色值如图：
+打开GPU调试开关，进入App之后，界面布局会显示对应的颜色值，颜色值如图：
 
 <img src="/assets/drawable/overdraw.png"  alt="pic" />
 
-颜色对应如下：
+颜色值对应的解释如下：
 
 	The colors are hinting at the amount of overdraw on your screen for each pixel, as follows:
 	True color: No overdraw
@@ -52,15 +52,17 @@ App的性能指标按照我的理解可以分为以下几个部分（不一定�
 	粉色 – 3次过度绘制 – 这部分的像素点只在屏幕上绘制了四次。
 	红色 – 4次过度绘制 – 这部分的像素点只在屏幕上绘制了五次。
 
-# 优化App
+## 优化App
 
-对照着官方介绍的资料，打开GPU调试开关，然后打开App，去优化界面布局，尽量让绘制的次数最少。
+对照着官方介绍的资料，打开GPU调试开关，然后打开App，去优化界面布局，尽量减少绘制次数。
 
 - 优化之前
+
 <img src="/assets/drawable/overdraw_setting.png"  alt="pic" />
 
 
 - 优化之后
+
 <img src="/assets/drawable/overdraw_setting_new.png"  alt="pic" />
 
 - 所做的工作
