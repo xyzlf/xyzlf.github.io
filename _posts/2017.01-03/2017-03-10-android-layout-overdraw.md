@@ -56,14 +56,9 @@ App的性能指标按照我的理解可以分为以下几个部分（不一定�
 
 对照着官方介绍的资料，打开GPU调试开关，然后打开App，去优化界面布局，尽量减少绘制次数。
 
-- 优化之前
+- 优化前后对比
 
-<img src="/assets/drawable/overdraw_setting.png"  alt="pic" />
-
-
-- 优化之后
-
-<img src="/assets/drawable/overdraw_setting_new.png"  alt="pic" />
+<img src="/assets/drawable/overdraw_setting.png"  alt="pic" /><img src="/assets/drawable/overdraw_setting_new.png"  alt="pic" />
 
 - 所做的工作
 
