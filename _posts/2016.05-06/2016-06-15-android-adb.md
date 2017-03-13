@@ -1,4 +1,5 @@
----
+
+c---
 layout: post
 title: Adb相关问题
 date: 2016-06-15 14:20:00
@@ -34,6 +35,42 @@ adb shell am start -n com.my.demo/com.my.demo.error.ErrorActivity
 adb -d install {apkpath}
 {% endhighlight java %}
 
+4、查看App启动消耗时间
+
+You can also measure the time to initial display by running your app with the ADB [Shell Activity Manager](https://developer.android.com/studio/command-line/adb.html#shellcommands) command. Here's an example:
+
+{% highlight java %}
+
+adb [-d|-e|-s <serialNumber>] shell am start -S -W
+
+com.example.app/.MainActivity
+
+-c android.intent.category.LAUNCHER
+
+-a android.intent.action.MAIN
+
+{% highlight java %}
+
+The Displayed metric appears in the logcat output as before. Your terminal window should also display the following:
+
+{% highlight java %}
+
+Starting: Intent
+
+Activity: com.example.app/.MainActivity
+
+ThisTime: 2044
+
+TotalTime: 2044
+
+WaitTime: 2054
+
+Complete
+
+{% highlight java %}
+
+The -c and -a arguments are optional and let you specify [<category>](https://developer.android.com/guide/topics/manifest/category-element.html) and [<action>](https://developer.android.com/guide/topics/manifest/action-element.html) for the intent.
+
 ##  Adb Error相关
 
 1、使用Genymotion遇到错误：
@@ -51,5 +88,9 @@ adb server version (32) doesn't match this client (36); killing...
 
 
 ## Adb相关资料
+
+Adb官网教程：<https://developer.android.com/studio/command-line/adb.html#shellcommands>
+
+官网性能优化教程：<https://developer.android.com/topic/performance/launch-time.html>
 
 《Android ADB命令?这一次我再也不死记了！》：<http://mp.weixin.qq.com/s/fWaa1rutwfoIIrje8RfWBw>
