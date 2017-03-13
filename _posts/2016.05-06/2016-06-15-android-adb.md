@@ -49,7 +49,7 @@ com.example.app/.MainActivity
 
 -a android.intent.action.MAIN
 
-{% highlight java %}
+{% endhighlight java %}
 
 The Displayed metric appears in the logcat output as before. Your terminal window should also display the following:
 
@@ -67,7 +67,7 @@ WaitTime: 2054
 
 Complete
 
-{% highlight java %}
+{% endhighlight java %}
 
 The -c and -a arguments are optional and let you specify [<category>](https://developer.android.com/guide/topics/manifest/category-element.html) and [<action>](https://developer.android.com/guide/topics/manifest/action-element.html) for the intent.
 
