@@ -19,46 +19,15 @@ tags: [博客笔记]
 
 <img src="/assets/drawable/hukai_android_optimization.png"  alt="pic" />
 
-3、各种完整开源项目，泡在网上的日子：<http://www.jcodecraeer.com/plus/list.php?tid=31&codecategory=22000>
-
-4、一起来使用kotlin开发完整客户端：<http://androidwing.net/index.php/148>
-
-5、RxJava系列：<https://zhuanlan.zhihu.com/p/24717157>
-
-
 ## 优秀的博文
 
-**(1)Android**
+1、孙福生的博文：<http://sunfusheng.com/>
 
-1、给Android开发者的RxJava详解：<http://gank.io/post/560e15be2dca930e00da1083>
+2、Cboy Blog 专注于移动开发，分享技术，共享快乐：<http://www.cboy.me/>
 
-2、Android Design Support Library的代码实验：<http://www.jianshu.com/p/1078568e859f>
+3、Coder 猿，改变世界的动物！ <http://www.blogfshare.com/>
 
-3、孙福生的博文：<http://sunfusheng.com/>
+4、安卓特殊控件处理方式：<http://www.diycode.cc/topics/429>
 
-4、Android Cool Posts：（Facebook工程师是如何改进他们Android客户端的...）<http://greenrobot.me/>
+5、各种完整开源项目，泡在网上的日子：<http://www.jcodecraeer.com/plus/list.php?tid=31&codecategory=22000>
 
-5、Android 面试总结：<http://www.jianshu.com/p/89f19d67b348>
-
-6、Cboy Blog 专注于移动开发，分享技术，共享快乐：<http://www.cboy.me/>
-
-7、Activity到底是什么时候显示到屏幕上的呢：<http://blog.desmondyao.com/android-show-time/?from=timeline&isappinstalled=0>
-
-8、Coder 猿，改变世界的动物！ <http://www.blogfshare.com/>
-
-9、dodola Tinker分析：<https://www.zybuluo.com/dodola/note/554061>
-
-10、2016优秀开源库集：<http://www.jianshu.com/p/3baf4b4f34b6>
-
-11、性能优化集结篇：<http://blog.lmj.wiki/2016/11/06/app-opti/app_opt_summary/>
-
-12、安卓特殊控件处理方式：<http://www.diycode.cc/topics/429>
-
-13、关于HTTP协议，一篇就够了：<http://www.cnblogs.com/ranyonsue/p/5984001.html>
-
-14、腾讯写的-那些年，我们一起写的单例模式：<http://mp.weixin.qq.com/s/pixuEDQ_OZ0RFjciTThKlQ>
-
-
-## 其他
-
-1、同事的博客：<https://dodola.gitbooks.io/dodo-android/content/java/java_nio.html>
