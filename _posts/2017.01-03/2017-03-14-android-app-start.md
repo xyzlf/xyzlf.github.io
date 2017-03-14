@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android性能优化之App进程启动
+title: Android性能优化之App启动速度
 date: 2017-03-14 15:38:00
 categories: [Android]
 tags: [Android]
