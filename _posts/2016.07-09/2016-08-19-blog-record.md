@@ -54,6 +54,10 @@ tags: [博客笔记]
 
 12、安卓特殊控件处理方式：<http://www.diycode.cc/topics/429>
 
+13、关于HTTP协议，一篇就够了：<http://www.cnblogs.com/ranyonsue/p/5984001.html>
+
+14、腾讯写的-那些年，我们一起写的单例模式：<http://mp.weixin.qq.com/s/pixuEDQ_OZ0RFjciTThKlQ>
+
 
 ## 其他
 
