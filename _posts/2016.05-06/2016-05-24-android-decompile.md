@@ -36,6 +36,8 @@ brew install dex2jar
 1、查看字节码详细信息
 {% highlight java %}
 javap -v FileUtils.class
+
+javap -c FileUtils.class
 {% endhighlight java %}	
 
 2、解压jar包
