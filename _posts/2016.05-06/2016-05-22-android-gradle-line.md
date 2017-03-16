@@ -35,6 +35,24 @@ gradle assembleRelease
 
 {% endhighlight java %}
 
+## Error
+
+**1、Failed to open zip file**
+
+<img src="/assets/drawable/gradle_error.png"  alt="pic" />
+
+（1）官网下载对应的gradle版本，这里是下载2.14.1版本：<http://downloads.gradle.org/distributions/gradle-2.14.1-all.zip >
+
+（2）将下载的gradle放置在对应的目录下面。
+
+{% highlight java %}
+/Applications/Android Studio.app/Contents/gradle/gradle-2.14.1
+{% endhighlight java %}
+
+（3）setting - gradle - Use local gradle distribution : 然后填上如上路径。
+
+参照该篇博文修改：[Android Studio 出现Failed to open zip file的问题](http://blog.csdn.net/captain_magicer/article/details/52076338)
+
 ##  相关资料
 
 Gradle官方文档：<http://tools.android.com/tech-docs/new-build-system/user-guide>
