@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android性能优化之App启动速度
+title: Gradle自定义插件开发
 date: 2017-04-05 20:39:00
 categories: [Android]
 tags: [Android]
