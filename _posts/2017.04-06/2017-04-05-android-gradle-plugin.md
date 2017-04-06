@@ -13,7 +13,7 @@ Gradle是一个强大的构建工具，能够给我们的项目带来极大的�
 
 **1、基本准备**
 
-{% highlight java %}
+```
 
 1、首先，新建一个Android项目。
 
@@ -22,7 +22,7 @@ Gradle是一个强大的构建工具，能够给我们的项目带来极大的�
 3、在新建的module中新建文件夹src，接着在src文件目录下新建main文件夹，在main目录下新建groovy目录，resources目录。在groovy目录下面新建包名，增加代码。resources目录下新建文件夹META-INF，META-INF文件夹下新建gradle-plugins文件夹。
 这样，就完成了gradle 插件的项目的整体搭建，之后就是小细节了。目前，项目的结构是这样的。
 
-{% endhighlight java %}
+```
 
 结构如图：
 
