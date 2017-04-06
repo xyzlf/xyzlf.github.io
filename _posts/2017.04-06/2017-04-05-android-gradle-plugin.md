@@ -9,6 +9,8 @@ tags: [Android]
 Gradle是一个强大的构建工具，能够给我们的项目带来极大的方便。Gradle插件是用groovy语言编写，而groovy完美兼容java代码，因此对于写java的童鞋来说，只需要很低的学习成本。接下来描述下，如何构建一个自定义的Gradle插件~
 <!--more-->
 
+项目地址：<https://github.com/xyzlf/CustomPlugin>
+
 ## 自定义Gradle插件及使用
 
 **1、基本准备**
@@ -142,9 +144,18 @@ class TimeListener implements TaskExecutionListener, BuildListener {
 
 （3）在resources/META-INF/gradle-plugins/目录下新建一个文件：xyzlf.plugin.time.properties.
 
-{% highlight java %}
+```
 
 注意： xyzlf.plugin.time就是应用的插件名，  如使用的地方引用：apply plugin: 'xyzlf.plugin.time'
+
+```
+
+内容如下：
+
+{% highlight java %}
+
+implementation-class=com.xyzlf.pluginlib.PluginImpl
+
 
 {% endhighlight java %}
 
@@ -259,8 +270,6 @@ apply plugin: 'xyzlf.plugin.time'
 {% endhighlight java %}
 
 2、如果对于上传到jcenter有不懂的，也可以参照此文：[Android Studio aar上传到jcenter](http://xyzlf.github.io/2016/07/10/android-aar-jcenter.html)
-
-## Gradle Flavor构建渠道包
 
 
 ## 参考资料
