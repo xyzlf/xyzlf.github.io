@@ -9,11 +9,11 @@ tags: [Android]
 Gradle是一个强大的构建工具，能够给我们的项目带来极大的方便。Gradle插件是用groovy语言编写，而groovy完美兼容java代码，因此对于写java的童鞋来说，只需要很低的学习成本。接下来描述下，如何构建一个自定义的Gradle插件~
 <!--more-->
 
-# 自定义Gradle插件及使用
+## 自定义Gradle插件及使用
 
 **1、基本准备**
 
-```
+{% highlight java %}
 
 1、首先，新建一个Android项目。
 
@@ -22,7 +22,7 @@ Gradle是一个强大的构建工具，能够给我们的项目带来极大的�
 3、在新建的module中新建文件夹src，接着在src文件目录下新建main文件夹，在main目录下新建groovy目录，resources目录。在groovy目录下面新建包名，增加代码。resources目录下新建文件夹META-INF，META-INF文件夹下新建gradle-plugins文件夹。
 这样，就完成了gradle 插件的项目的整体搭建，之后就是小细节了。目前，项目的结构是这样的。
 
-```
+{% endhighlight java %}
 
 结构如图：
 
@@ -30,7 +30,7 @@ Gradle是一个强大的构建工具，能够给我们的项目带来极大的�
 
 **2、修改Module下面的build.gradle（修改上图pluginlib下面的build.gradle）**
 
-```
+{% highlight java %}
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
@@ -55,7 +55,7 @@ uploadArchives {
     }
 }
 
-```
+{% endhighlight java %}
 
 **3、增加自定义插件groovy代码**
 
@@ -65,7 +65,7 @@ uploadArchives {
 
 PluginImpl.groovy
 
-```
+{% highlight java %}
 
 package com.xyzlf.pluginlib
 
@@ -81,11 +81,11 @@ public class PluginImpl implements Plugin<Project> {
     }
 }
 
-```
+{% endhighlight java %}
 
 TimeListener.groovy
 
-```
+{% highlight java %}
 
 package com.xyzlf.pluginlib
 
@@ -138,18 +138,18 @@ class TimeListener implements TaskExecutionListener, BuildListener {
 }
 
 
-```
+{% endhighlight java %}
 
 （3）在resources/META-INF/gradle-plugins/目录下新建一个文件：xyzlf.plugin.time.properties.
 
-```
+{% highlight java %}
 
 注意： xyzlf.plugin.time就是应用的插件名，  如使用的地方引用：apply plugin: 'xyzlf.plugin.time'
 
-```
+{% endhighlight java %}
 
 
-# 将Gradle插件发布到本地仓库
+## 将Gradle插件发布到本地仓库
 
 1、填写完上面的插件代码，接下来就是发不到本地仓库了。
 
@@ -159,7 +159,7 @@ class TimeListener implements TaskExecutionListener, BuildListener {
 
 4、使用本地的自定义插件，在项目的 app/build.gradle文件中，引用自定义插件。
 
-```
+{% highlight java %}
 
 buildscript {
     repositories {
@@ -174,27 +174,27 @@ buildscript {
 }
 apply plugin: 'xyzlf.plugin.time'
 
-```
+{% endhighlight java %}
 
 5、在项目根目录执行：gradlew clean build 就会出现task的耗时统计。
 
 <img src="/assets/drawable/gradle_plugin_time.png"  alt="pic" />
 
-# 将Gradle插件上传到jcenter
+## 将Gradle插件上传到jcenter
 
 1、具体步骤其实也简单。
 
 （1）在项目的根目录下面加入上传到jcenter的插件依赖库： CustomPlugin/build.gradle。
 
-```
+{% highlight java %}
 
 classpath 'com.novoda:bintray-release:0.3.4' // 上传自定义插件到jcenter仓库的依赖库
 
-```
+{% endhighlight java %}
 
 （2）在module目录下增加如下内容：
 
-```
+{% highlight java %}
 
 apply plugin: 'com.novoda.bintray-release'//添加上传到jcenter仓库用到的插件
 
@@ -221,32 +221,30 @@ publish {
 }
 
 
-
-```
+{% endhighlight java %}
 
 （3）在根目录的local.properties配置你的bintray.user名，及bintray.apikey值。
 
-```
+{% highlight java %}
 
 bintray.apikey=你的bintray.apikey值
 bintray.user=你的bintray.user名称
 
-
-```
+{% endhighlight java %}
 
 （4）配置完，在项目根目录下面，执行命令行：
 
-```
+{% highlight java %}
 
 gradlew clean build bintrayUpload
 
-```
+{% endhighlight java %}
 
 不出意外，应该就上传到jcenter中心了，然后你去 http://bintray.com/ 中增加到jcenter，审核通过后，就能使用了。
 
 （5）使用jcenter依赖：
 
-```
+{% highlight java %}
 
 buildscript {
     repositories {
@@ -258,12 +256,11 @@ buildscript {
 }
 apply plugin: 'xyzlf.plugin.time'
 
-
-```
+{% endhighlight java %}
 
 2、如果对于上传到jcenter有不懂的，也可以参照此文：[Android Studio aar上传到jcenter](http://xyzlf.github.io/2016/07/10/android-aar-jcenter.html)
 
-# Gradle Flavor构建渠道包
+## Gradle Flavor构建渠道包
 
 
 ## 参考资料
