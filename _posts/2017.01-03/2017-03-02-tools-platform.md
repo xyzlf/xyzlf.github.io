@@ -30,6 +30,7 @@ Trello是一个很不错的团队协作平台，咦看板形式展现，可以�
 
 官方地址为：<https://trello.com/>
 
+开源中国的一个平台: <https://team.oschina.net/>
 
 
 ## Git代码仓库
@@ -38,6 +39,8 @@ GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码�
 
 官方网址为：<https://gitlab.com>
 
+
+GO语言的一个平台，简单易用，强大无敌：<https://gogs.io/>
 
 
 ## 禅道
