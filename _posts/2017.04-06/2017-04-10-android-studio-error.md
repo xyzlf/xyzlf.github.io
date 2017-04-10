@@ -23,7 +23,7 @@ Manifest merger failed with multiple errors, see logs
 
 **解决方案**
 
-在AndroidManifest.xml的application节点下，添加这句：
+在AndroidManifest.xml的application节点下，添加这句tools:replace="..."， 参考[Android Studio使用心得 - 常见问题集锦](1)
 
 {% highlight java %}
 tools:replace="android:allowBackup, android:theme, android:icon, android:label, android:supportsRtl"
@@ -42,3 +42,6 @@ tools:replace="android:allowBackup, android:theme, android:icon, android:label, 
 </application>
 {% endhighlight java %}
 
+
+
+[1]:http://blog.csdn.net/codezjx/article/details/38669939
