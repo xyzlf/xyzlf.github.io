@@ -11,21 +11,21 @@ tags: [Tools]
 
 ## Manifest merger failed with multiple errors
 
-** 错误详情 **
+**错误详情**
 
-```
+{% highlight java %}
 Information:Gradle tasks [:app:generateWandoujiaReleaseSources, :app:prepareWandoujiaReleaseUnitTestDependencies, :app:mockableAndroidJar]
 Error:Execution failed for task ':app:processWandoujiaReleaseManifest'.
 Manifest merger failed with multiple errors, see logs
-```
+{% endhighlight java %}
 
 <img src="/assets/drawable/android_studio_error1.png"  alt="pic" />
 
-** 解决方案 **
+**解决方案**
 
 在AndroidManifest.xml的application节点下，添加这句：
 
-```
+{% highlight java %}
 tools:replace="android:allowBackup, android:theme, android:icon, android:label, android:supportsRtl"
 
 //完整的
@@ -40,5 +40,5 @@ tools:replace="android:allowBackup, android:theme, android:icon, android:label, 
 	// ...
 
 </application>
-```
+{% endhighlight java %}
 
