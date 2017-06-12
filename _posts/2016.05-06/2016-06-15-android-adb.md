@@ -1,5 +1,4 @@
-
-c---
+---
 layout: post
 title: Adb相关问题
 date: 2016-06-15 14:20:00
