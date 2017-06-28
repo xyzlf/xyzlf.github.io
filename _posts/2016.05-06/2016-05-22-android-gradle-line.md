@@ -35,6 +35,12 @@ gradle assembleRelease
 
 {% endhighlight java %}
 
+## Windows中gradle本地仓库地址
+
+{% highlight java %}
+../android-studio/gradle/gradle-2.10
+{% endhighlight java %}
+
 ## Error
 
 **1、Failed to open zip file**
