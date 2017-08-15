@@ -35,6 +35,18 @@ gradle assembleRelease
 
 {% endhighlight java %}
 
+3、查看项目module的依赖关系
+
+{% highlight java %}
+
+./gradlew -q dependencies <module-name>:dependencies --configuration compile
+
+eg:
+
+./gradlew -q dependencies app:dependencies --configuration compile
+
+{% endhighlight java %}
+
 ## Windows中gradle本地仓库地址
 
 {% highlight java %}
