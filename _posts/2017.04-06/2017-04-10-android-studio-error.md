@@ -43,5 +43,26 @@ tools:replace="android:allowBackup, android:theme, android:icon, android:label, 
 {% endhighlight java %}
 
 
+## 使用Rxjava 跟CompileSdkVersion冲突， 导致4.0手机崩溃的问题。
+
+参考文章：<https://stackoverflow.com/questions/37619596/rxjava-noclassdeffounderror-rx-plugins-rxjavaplugins-on-api-16>
+
+接入一个SDK后，方法数超标了。 所以Rxjava中的各种类找不着...继承MultiDexApplication解决问题。
+
+
+{% highlight java %}
+
+compile 'com.android.support:multidex:1.0.1'
+
+{% endhighlight java %}
+
+
+{% highlight java %}
+
+In thread: Thread[main,5,main]                                                             
+UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.CompositeSubscription
+
+{% endhighlight java %}
+
 
 [1]: http://blog.csdn.net/codezjx/article/details/38669939
