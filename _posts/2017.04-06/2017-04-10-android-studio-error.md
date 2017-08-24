@@ -64,5 +64,17 @@ UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.Com
 
 {% endhighlight java %}
 
+## Gralde Failed to open zip file
+
+**错误详情**
+
+<img src="/assets/drawable/gradle_error2.png"  alt="pic" />
+
+**解决方案**
+
+指定正确的gradle路径。
+
+<img src="/assets/drawable/gradle_error2_solution.png"  alt="pic" />
+
 
 [1]: http://blog.csdn.net/codezjx/article/details/38669939
