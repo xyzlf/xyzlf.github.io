@@ -9,7 +9,7 @@ tags: [Tools]
 记录Android Studio中的一些错误，以及解决方案~
 <!--more-->
 
-## 一 Manifest merger failed with multiple errors
+## Manifest merger failed with multiple errors
 
 **错误详情**
 
@@ -43,7 +43,7 @@ tools:replace="android:allowBackup, android:theme, android:icon, android:label, 
 {% endhighlight java %}
 
 
-## 二 使用Rxjava 跟CompileSdkVersion冲突， 导致4.0手机崩溃的问题。
+## 使用Rxjava 跟CompileSdkVersion冲突， 导致4.0手机崩溃的问题。
 
 参考文章：<https://stackoverflow.com/questions/37619596/rxjava-noclassdeffounderror-rx-plugins-rxjavaplugins-on-api-16>
 
@@ -64,7 +64,7 @@ UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.Com
 
 {% endhighlight java %}
 
-## 三 Gralde Failed to open zip file
+## Gralde Failed to open zip file
 
 **错误详情**
 
@@ -76,7 +76,7 @@ UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.Com
 
 <img src="/assets/drawable/gradle_error2_solution.png"  alt="pic" />
 
-## 四 Error:Execution failed for task ':app:transformClassesWithExtractJarsForDebug'.
+## Error:Execution failed for task ':app:transformClassesWithExtractJarsForDebug'.
 
 **错误详情**
 
