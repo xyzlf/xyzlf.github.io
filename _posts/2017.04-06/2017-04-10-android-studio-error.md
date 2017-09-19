@@ -9,7 +9,7 @@ tags: [Tools]
 记录Android Studio中的一些错误，以及解决方案~
 <!--more-->
 
-## Manifest merger failed with multiple errors
+## Manifest merger failed with multiple errors  
 
 **错误详情**
 
