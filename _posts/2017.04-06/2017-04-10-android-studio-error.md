@@ -76,5 +76,13 @@ UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.Com
 
 <img src="/assets/drawable/gradle_error2_solution.png"  alt="pic" />
 
+## Error:Execution failed for task ':app:transformClassesWithExtractJarsForDebug'.
+
+**错误详情**
+<img src="/assets/drawable/error_transformClassesWithExtractJars.png"  alt="pic" />
+
+**解决方案**
+关掉instant run之后解决
+
 
 [1]: http://blog.csdn.net/codezjx/article/details/38669939
