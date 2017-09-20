@@ -176,6 +176,89 @@ public class TestAspect {
 
 {% endhighlight java %}
 
+## 编译后MainActivity类和People类信息
+
+1、MainActivity
+
+{% highlight java %}
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.xyzlf.aspectjdemo;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import com.xyzlf.aspectjdemo.People;
+import com.xyzlf.aspectjdemo.TestAspect;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.runtime.reflect.Factory;
+
+public class MainActivity extends AppCompatActivity {
+    public MainActivity() {
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(2130968603);
+        new People();
+        this.test("this is tag for test");
+    }
+
+    public void test(String test) {
+        try {
+            throw new IllegalArgumentException("self throw exception");
+        } catch (Exception var5) {
+            JoinPoint var4 = Factory.makeJP(ajc$tjp_0, this, (Object)null, var5);
+            TestAspect.aspectOf().catchException(var4);
+        }
+    }
+
+    static {
+        ajc$preClinit();
+    }
+}
+
+{% endhighlight java %}
+
+2、People：
+
+{% highlight java %}
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.xyzlf.aspectjdemo;
+
+import com.xyzlf.aspectjdemo.TestAspect;
+
+public class People {
+    public People() {
+    }
+
+    static {
+        try {
+            boolean var0 = true;
+        } catch (Throwable var2) {
+            if(var2 instanceof ExceptionInInitializerError) {
+                throw (ExceptionInInitializerError)var2;
+            }
+
+            TestAspect.aspectOf().afterStaticInitial();
+            throw var2;
+        }
+
+        TestAspect.aspectOf().afterStaticInitial();
+    }
+}
+
+{% endhighlight java %}
+
+
 ## 运行程序后日志
 
 {% highlight java %}
