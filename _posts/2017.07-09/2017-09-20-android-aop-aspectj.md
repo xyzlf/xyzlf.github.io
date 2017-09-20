@@ -193,5 +193,13 @@ public class TestAspect {
 
 地址：<https://github.com/xyzlf/AspectjDemo>
 
+## 参考资料
+
+1、Android AOP学习之：AspectJ实践：<https://juejin.im/post/58ad3944b123db00672cdeeb>
+
+2、看 AspectJ 在 Android 中的强势插入：<https://juejin.im/post/587989f48d6d810058bbae01>
+
+3、深入理解Android之AOP：<http://blog.csdn.net/innost/article/details/49387395>
+
 
 [1]: http://blog.csdn.net/innost/article/details/49387395
