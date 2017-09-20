@@ -8,7 +8,7 @@ tags: [AOP]
 
 AOP(Aspect Oriented Programming),中文通常翻译成面向切面编程。在Java当中我们常常提及到的是OOP(Object Oriented Programming)面向对象编程。其实这些都只是编程中从不同的思考方向得出的一种编程思想、编程方法。
 <!--more-->
-在开发过程中，对于很多场景可以借助AOP来完成，比如日志监控，异常处理，无侵入的在宿主中插入一些代码等。这里有一篇博文介绍的非常详细[深入理解Android之AOP][1]，感兴趣的可以深入阅读一下~
+在开发过程中，对于很多场景可以借助AOP来完成，比如日志监控，异常处理，无侵入的在宿主中插入一些代码等。这里有一篇博文介绍的非常详细[《深入理解Android之AOP》][1]，感兴趣的可以深入阅读一下~
 
 本文主要从实践层面来学习下AspectJ的使用，以及实际项目中中，可以给程序开发带来的方便。
 
@@ -193,7 +193,7 @@ public class TestAspect {
 
 地址：<https://github.com/xyzlf/AspectjDemo>
 
-## 参考资料
+## 参考资料 
 
 1、Android AOP学习之：AspectJ实践：<https://juejin.im/post/58ad3944b123db00672cdeeb>
 
