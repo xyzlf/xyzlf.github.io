@@ -181,7 +181,7 @@ public class TestAspect {
 {% highlight java %}
 
 09-20 03:56:56.672 10847-10847/? D/TestAspect: the static block is initial
-09-20 03:56:56.672 10847-10847/? D/TestAspect: this is a try catch block. handler(catch(Exception))
+09-20 03:56:56.672 10847-10847/? D/TestAspect: this is a try catch block.)
                                                
                                                [ 09-20 03:56:56.694 10847:10847 D/         ]
                                                HostConnection::get() New Host Connection established 0xe0cb1280, tid 10847
