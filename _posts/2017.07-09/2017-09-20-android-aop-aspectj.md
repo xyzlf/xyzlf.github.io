@@ -12,7 +12,7 @@ AOP(Aspect Oriented Programming),中文通常翻译成面向切面编程。在Ja
 
 本文主要从实践层面来学习下AspectJ的使用，以及实际项目中中，可以给程序开发带来的方便。
 
-## AspectJ的配置
+## AspectJ的配置 
 
 1、工程根目录build.gradle配置
 
