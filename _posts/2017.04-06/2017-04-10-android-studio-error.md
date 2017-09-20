@@ -86,5 +86,25 @@ UncaughtException detected: java.lang.NoClassDefFoundError: rx.subscriptions.Com
 
 关掉instant run之后解决
 
+## Intellij Class JavaLaunchHelper is implemented in two places
+
+**错误详情**
+
+{% highlight java %}
+
+objc[3648]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/bin/java (0x10d19c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ea194e0). One of the two will be used. Which one is undefined.
+
+{% endhighlight java %}
+
+**解决方案**
+
+进入IDE，Help --> Eidt Custom Properties, 在idea.properties中加入下面这句，然后重启IDE即可。
+
+{% highlight java %}
+idea.no.launcher=true
+{% endhighlight java %}
+
+Stack overflow : <https://stackoverflow.com/questions/43003012/class-javalaunchhelper-is-implemented-in-two-places/43003231#43003231>
+
 
 [1]: http://blog.csdn.net/codezjx/article/details/38669939
