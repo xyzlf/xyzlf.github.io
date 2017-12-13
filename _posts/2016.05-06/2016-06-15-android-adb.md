@@ -29,6 +29,22 @@ adb shell am start -n com.my.demo/.activity.MainActivity
 adb shell am start -n com.my.demo/com.my.demo.error.ErrorActivity
 {% endhighlight java %}
 
+3、adb启动service：
+{% highlight java %}
+$ adb shell
+$ am startservice -n ｛包(package)名｝/｛包名｝.{服务(service)名称}
+如：启动自己应用中一个service
+am startservice -n com.android.traffic/com.android.traffic.maniservice
+{% endhighlight java %}
+
+4、adb发送broadcast：
+{% highlight java %}
+$ adb shell
+$ am broadcast -a <广播动作>
+如：发送一个网络变化的广播
+am broadcast -a android.net.conn.CONNECTIVITY_CHANGE
+{% endhighlight java %}
+
 3、模拟器真机同时存在的情况下，安装Apk：
 {% highlight java %}
 adb -d install {apkpath}
