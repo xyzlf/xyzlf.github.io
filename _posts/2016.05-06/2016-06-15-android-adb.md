@@ -109,3 +109,5 @@ Adb官网教程：<https://developer.android.com/studio/command-line/adb.html#sh
 官网性能优化教程：<https://developer.android.com/topic/performance/launch-time.html>
 
 《Android ADB命令?这一次我再也不死记了！》：<http://mp.weixin.qq.com/s/fWaa1rutwfoIIrje8RfWBw>
+
+adb logcat 命令行用法:<http://blog.csdn.net/tumuzhuanjia/article/details/39555445>
