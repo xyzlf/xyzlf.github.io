@@ -47,6 +47,16 @@ eg:
 
 {% endhighlight java %}
 
+4、调试gradle插件
+
+现在运行处 “Edit Configurations”编辑，然后添加一个 “Romote”。 运行如下命令行：
+
+{% highlight java %}
+
+./gradlew clean app:assembleRelease --stacktrace  -Dorg.gradle.debug=true
+
+{% endhighlight java %}
+
 ## Windows中gradle本地仓库地址
 
 {% highlight java %}
