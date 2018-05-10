@@ -20,16 +20,16 @@ Android开发过程中，经常会引入so文件，因为so具有安全，高效
 
 {% highlight java %}
 
-	#include <jni.h>
-	#include <string>
+#include <jni.h>
+#include <string>
 	
-	//静态注册
-	extern "C"
-	JNIEXPORT jstring JNICALL
-	Java_com_sankuai_ndk_demo_NdkManager_stringFromJNI(JNIEnv *env, jclass type) 	{
-	    std::string hello = "我是补丁so，动态加载即时生效";
-	    return env->NewStringUTF(hello.c_str());
-	}
+//静态注册
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_sankuai_ndk_demo_NdkManager_stringFromJNI(JNIEnv *env, jclass type) 	{
+    std::string hello = "我是补丁so，动态加载即时生效";
+    return env->NewStringUTF(hello.c_str());
+}
 	
 {% endhighlight java %}
 
@@ -37,33 +37,33 @@ Android开发过程中，经常会引入so文件，因为so具有安全，高效
 
 {% highlight java %}
 
-	#include <jni.h>
-	#include <string>
+#include <jni.h>
+#include <string>
 	
-	//动态注册
-	jint test(JNIEnv *env, jclass clazz) {
-	    return 10086;
-	}
+//动态注册
+jint test(JNIEnv *env, jclass clazz) {
+    return 10086;
+}
 	
-	JNINativeMethod nativeMethods[] = {"test", "()I", (void *) test};
+JNINativeMethod nativeMethods[] = {"test", "()I", (void *) test};
 	
-	#define JNIREG_CLASS "com/sankuai/ndk/demo/NdkManager"
-	JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-	    printf("old JNI_OnLoad");
+#define JNIREG_CLASS "com/sankuai/ndk/demo/NdkManager"
+JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
+    printf("old JNI_OnLoad");
 	
-	    JNIEnv* env = NULL;
-	    //判断虚拟机状态是否有问题
-	    if(vm->GetEnv((void**)&env,JNI_VERSION_1_6)!= JNI_OK){
-	        return -1;
-	    }
+    JNIEnv* env = NULL;
+    //判断虚拟机状态是否有问题
+    if(vm->GetEnv((void**)&env,JNI_VERSION_1_6)!= JNI_OK){
+        return -1;
+    }
 	
-	    jclass clz = env->FindClass(JNIREG_CLASS);
-	    if (env->RegisterNatives(clz, nativeMethods, sizeof(nativeMethods)/ sizeof(nativeMethods[0])) != JNI_OK) {
-	        return JNI_ERR;
-	    }
+    jclass clz = env->FindClass(JNIREG_CLASS);
+    if (env->RegisterNatives(clz, nativeMethods, sizeof(nativeMethods)/ sizeof(nativeMethods[0])) != JNI_OK) {
+        return JNI_ERR;
+    }
 	
-	    return JNI_VERSION_1_6;
-	}
+    return JNI_VERSION_1_6;
+}
 
 {% endhighlight java %}
 
@@ -71,21 +71,21 @@ Android开发过程中，经常会引入so文件，因为so具有安全，高效
 
 {% highlight java %}
 
-	package com.sankuai.ndk.demo;
+package com.sankuai.ndk.demo;
 
-	public class NdkManager {
-	    static {
-	        System.loadLibrary("native-lib");
-	    }
-	    /**
-	     * A native method that is implemented by the 'native-lib' native 
-	     * library, which is packaged with this application.
-	     */
-	    public static native String stringFromJNI();
+public class NdkManager {
+    static {
+        System.loadLibrary("native-lib");
+    }
+    /**
+     * A native method that is implemented by the 'native-lib' native 
+     * library, which is packaged with this application.
+     */
+    public static native String stringFromJNI();
 	
-	    public static native int test();
+    public static native int test();
 	
-	}
+}
 
 {% endhighlight java %}
 
@@ -98,27 +98,27 @@ java.lang.Runtime类里面：
 
 {% highlight java %}
 
-	System.loadLibrary(String libName)：传进去的参数：so库名称， 表示的so库文件，位于apk压缩文件中的libs目录，最后复制到apk安装目录下。
-	System.load(String pathName)：传进去的参数：so库在磁盘中的完整路径， 加载一个自定义外部so库文件 。
+System.loadLibrary(String libName)：传进去的参数：so库名称， 表示的so库文件，位于apk压缩文件中的libs目录，最后复制到apk安装目录下。
+System.load(String pathName)：传进去的参数：so库在磁盘中的完整路径， 加载一个自定义外部so库文件 。
 
 {% endhighlight java %}
 
 {% highlight java %}
 
-	private String doLoad(String name, ClassLoader loader) {
-	        // ...
-	        String librarySearchPath = null;
-	        if (loader != null && loader instanceof BaseDexClassLoader) {
-	            BaseDexClassLoader dexClassLoader = (BaseDexClassLoader) loader;
-	            librarySearchPath = dexClassLoader.getLdLibraryPath();
-	        }
-	        // nativeLoad should be synchronized so there's only one LD_LIBRARY_PATH in use regardless
-	        // of how many ClassLoaders are in the system, but dalvik doesn't support synchronized
-	        // internal natives.
-	        synchronized (this) {
-	            return nativeLoad(name, loader, librarySearchPath);
-	        }
-	    }
+private String doLoad(String name, ClassLoader loader) {
+        // ...
+        String librarySearchPath = null;
+        if (loader != null && loader instanceof BaseDexClassLoader) {
+            BaseDexClassLoader dexClassLoader = (BaseDexClassLoader) loader;
+            librarySearchPath = dexClassLoader.getLdLibraryPath();
+        }
+        // nativeLoad should be synchronized so there's only one LD_LIBRARY_PATH in use regardless
+        // of how many ClassLoaders are in the system, but dalvik doesn't support synchronized
+        // internal natives.
+        synchronized (this) {
+            return nativeLoad(name, loader, librarySearchPath);
+        }
+}
 
 {% endhighlight java %}
 
@@ -171,31 +171,31 @@ SOPatchManager.loadLibrary接口加载so库的时候优先尝试去加载sdk指�
 
 {% highlight java %}
 
-	private String[] getPrimaryCpuAbi() {
-	        String[] cpuAbi = null;
-	        try {
+private String[] getPrimaryCpuAbi() {
+        String[] cpuAbi = null;
+        try {
 	
-	            PackageManager pm = getPackageManager();
-	            if (null != pm) {
-	                ApplicationInfo applicationInfo = pm.getApplicationInfo(getPackageName(), 0);
+            PackageManager pm = getPackageManager();
+            if (null != pm) {
+                ApplicationInfo applicationInfo = pm.getApplicationInfo(getPackageName(), 0);
 	
-	                if (null != applicationInfo) {
-	                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-	                        Field field = ApplicationInfo.class.getField("primaryCpuAbi");
-	                        field.setAccessible(true);
-	                        String abi = (String) field.get(applicationInfo);
+                if (null != applicationInfo) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        Field field = ApplicationInfo.class.getField("primaryCpuAbi");
+                        field.setAccessible(true);
+                        String abi = (String) field.get(applicationInfo);
 	
-	                        cpuAbi = new String[]{abi};
-	                    } else {
-	                        cpuAbi = new String[]{Build.CPU_ABI, Build.CPU_ABI2};
-	                    }
-	                }
-	            }
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	        return cpuAbi;
-	}
+                        cpuAbi = new String[]{abi};
+                    } else {
+                        cpuAbi = new String[]{Build.CPU_ABI, Build.CPU_ABI2};
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return cpuAbi;
+}
 	
 {% endhighlight java %}
 
