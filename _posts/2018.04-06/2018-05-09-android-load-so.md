@@ -161,6 +161,10 @@ SOPatchManager.loadLibrary接口加载so库的时候优先尝试去加载sdk指�
 
 -  反射注入
 
+sdk<23 我们可以采取类似类修复反射注入方式， 只要把我们的补丁so库的路径插入到nativeLibraryDirectories数组的最前面就能够达到加载so库的时候是补丁so库而不是原来so库的目录， 从而达到修复的目的。
+
+sdk23以上findLibrary实现已经发生了变化， 如上所示， 那么我们只需要把补丁so库的完整路径作为参数构建一个Element对象， 然后再插入到nativeLibraryPathElements数组的最前面就好了。
+
 
 ## 如果正确复制补丁so库
 
