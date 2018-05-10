@@ -96,10 +96,9 @@ Java Api提供以下两个接口加载一个so库。这两种方式最后都调�
 
 java.lang.Runtime类里面：
 
-***
 System.loadLibrary(String libName)：传进去的参数：so库名称， 表示的so库文件，位于apk压缩文件中的libs目录，最后复制到apk安装目录下。
+
 System.load(String pathName)：传进去的参数：so库在磁盘中的完整路径， 加载一个自定义外部so库文件 。
-***
 
 
 {% highlight java %}
