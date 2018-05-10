@@ -96,28 +96,27 @@ Java Api提供以下两个接口加载一个so库。这两种方式最后都调�
 
 java.lang.Runtime类里面：
 
-{% highlight java %}
-
+***
 System.loadLibrary(String libName)：传进去的参数：so库名称， 表示的so库文件，位于apk压缩文件中的libs目录，最后复制到apk安装目录下。
 System.load(String pathName)：传进去的参数：so库在磁盘中的完整路径， 加载一个自定义外部so库文件 。
+***
 
-{% endhighlight java %}
 
 {% highlight java %}
 
 private String doLoad(String name, ClassLoader loader) {
-        // ...
-        String librarySearchPath = null;
-        if (loader != null && loader instanceof BaseDexClassLoader) {
-            BaseDexClassLoader dexClassLoader = (BaseDexClassLoader) loader;
-            librarySearchPath = dexClassLoader.getLdLibraryPath();
-        }
-        // nativeLoad should be synchronized so there's only one LD_LIBRARY_PATH in use regardless
-        // of how many ClassLoaders are in the system, but dalvik doesn't support synchronized
-        // internal natives.
-        synchronized (this) {
-            return nativeLoad(name, loader, librarySearchPath);
-        }
+    // ...
+    String librarySearchPath = null;
+    if (loader != null && loader instanceof BaseDexClassLoader) {
+        BaseDexClassLoader dexClassLoader = (BaseDexClassLoader) loader;
+        librarySearchPath = dexClassLoader.getLdLibraryPath();
+    }
+    // nativeLoad should be synchronized so there's only one LD_LIBRARY_PATH in use regardless
+    // of how many ClassLoaders are in the system, but dalvik doesn't support synchronized
+    // internal natives.
+    synchronized (this) {
+        return nativeLoad(name, loader, librarySearchPath);
+    }
 }
 
 {% endhighlight java %}
@@ -172,29 +171,29 @@ SOPatchManager.loadLibrary接口加载so库的时候优先尝试去加载sdk指�
 {% highlight java %}
 
 private String[] getPrimaryCpuAbi() {
-        String[] cpuAbi = null;
-        try {
+    String[] cpuAbi = null;
+    try {
 	
-            PackageManager pm = getPackageManager();
-            if (null != pm) {
-                ApplicationInfo applicationInfo = pm.getApplicationInfo(getPackageName(), 0);
+        PackageManager pm = getPackageManager();
+        if (null != pm) {
+            ApplicationInfo applicationInfo = pm.getApplicationInfo(getPackageName(), 0);
 	
-                if (null != applicationInfo) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        Field field = ApplicationInfo.class.getField("primaryCpuAbi");
-                        field.setAccessible(true);
-                        String abi = (String) field.get(applicationInfo);
+            if (null != applicationInfo) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    Field field = ApplicationInfo.class.getField("primaryCpuAbi");
+                    field.setAccessible(true);
+                    String abi = (String) field.get(applicationInfo);
 	
-                        cpuAbi = new String[]{abi};
-                    } else {
-                        cpuAbi = new String[]{Build.CPU_ABI, Build.CPU_ABI2};
-                    }
+                    cpuAbi = new String[]{abi};
+                } else {
+                    cpuAbi = new String[]{Build.CPU_ABI, Build.CPU_ABI2};
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        return cpuAbi;
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return cpuAbi;
 }
 	
 {% endhighlight java %}
