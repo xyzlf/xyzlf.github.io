@@ -86,6 +86,10 @@ Complete
 
 The -c and -a arguments are optional and let you specify [category](https://developer.android.com/guide/topics/manifest/category-element.html) and [action](https://developer.android.com/guide/topics/manifest/action-element.html) for the intent.
 
+7、查看进程启动
+
+过滤关键字: start proc
+
 ##  Adb Error相关
 
 1、使用Genymotion遇到错误：
