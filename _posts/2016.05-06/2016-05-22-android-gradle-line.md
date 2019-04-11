@@ -21,6 +21,12 @@ gradle :app:dependencies
 
 {% highlight java %}
 
+./gradlew dependencies app:dependencies --configuration compile
+
+{% endhighlight java %}
+
+{% highlight java %}
+
 gradle tasks --all
 eg: gradle -q app:depIn --configuration compile --dependency appcompat-v7
 
