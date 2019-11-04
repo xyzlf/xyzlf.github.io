@@ -63,6 +63,14 @@ eg:
 
 {% endhighlight java %}
 
+5、gradle下载超时解决方案
+
+1. 终端里面  open  .gradle 目录。
+2. caches/modules-2/files-2.1/  找到对应的目录。 例如：com.android.tools.build, 接着找到gradle-core，接着找到3.1.2
+3. 通过迅雷下载 gradle-core-3.1.2.jar，  然后在终端中计算该jar的散列值。  shasum gradle-core-3.1.2.jar
+4. 在3.1.2目录下面，新建这个散列值的目录， 然后将jar包拷贝到这个目录下面。
+5. 重新进入项目，进行编译。
+
 ## Windows中gradle本地仓库地址
 
 {% highlight java %}
