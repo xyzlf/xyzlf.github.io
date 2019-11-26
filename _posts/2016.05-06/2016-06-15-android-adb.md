@@ -90,6 +90,14 @@ The -c and -a arguments are optional and let you specify [category](https://deve
 
 过滤关键字: start proc
 
+8、过滤Android异常
+
+{% highlight java %}
+
+adb logcat | grep AndroidRuntime
+
+{% endhighlight java %}
+
 ##  Adb Error相关
 
 1、使用Genymotion遇到错误：
