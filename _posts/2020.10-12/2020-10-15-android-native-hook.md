@@ -55,22 +55,23 @@ hook的函数
 
 	void ThreadList::SuspendAll(const char* cause, bool long_suspend)
 
-#### 步骤一 找到thread_list所在的so
+**步骤一 找到thread_list所在的so**
+
 （1）在网址中<https://cs.android.com/>，直接搜索ThreadList::SuspendAll这个native方法。
 
 （2）然后如下图，找到Android.bp，找到对应的so名称:
 
 <img src="/assets/drawable/android-native-hook-findso.png"  alt="pic" />
 
-（2）在Android手机的目录下，将so pull出来
+（3）在Android手机的目录下，将so pull出来
 
 	adb pull /apex/com.android.runtime/lib/libart.so   
 	
-#### 步骤二 查询hook函数的签名信息
+**步骤二 查询hook函数的签名信息**
 	
 通过 readelf -s libart.so，查找 ThreadList::SuspendAll 函数的签名信息。通过这个命令查询，会发现函数签名不全，被截取了。可以下载一个软件辅助查看。cutter下载地址：<https://cutter.re/>，cutter github地址：<https://github.com/radareorg/cutter>
 
-#### 步骤三 通过爱奇艺xhook工具进行hook
+**步骤三 通过爱奇艺xhook工具进行hook**
 
 	static void (*suspend_all_origin)(char const *, bool);
 	static void suspend_all_proxy(char const *cause, bool long_suspend = false) {
@@ -90,7 +91,7 @@ hook的函数
  以上三步，就完成了native hook的操作。
  
  
-#### 完整Demo地址
+**完整Demo地址**
 NativeHookDemo： <https://github.com/xyzlf/NativeHookDemo>
 
 ## 参考资料
