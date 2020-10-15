@@ -55,20 +55,22 @@ hook的函数
 
 	void ThreadList::SuspendAll(const char* cause, bool long_suspend)
 
-### 步骤一 找到thread_list所在的so
-1、在网址中<https://cs.android.com/>，直接搜索ThreadList::SuspendAll这个native方法。
+#### 步骤一 找到thread_list所在的so
+（1）在网址中<https://cs.android.com/>，直接搜索ThreadList::SuspendAll这个native方法。
 
-2、然后如下图，找到Android.bp，找到对应的so名称:
+（2）然后如下图，找到Android.bp，找到对应的so名称:
 
 <img src="/assets/drawable/android-native-hook-findso.png"  alt="pic" />
 
-3、在Android手机的目录下，将so pull出来
+（2）在Android手机的目录下，将so pull出来
 
 	adb pull /apex/com.android.runtime/lib/libart.so   
 	
-4、通过 readelf -s libart.so，查找 ThreadList::SuspendAll 函数的签名信息。通过这个命令查询，会发现函数签名不全，被截取了。可以下载一个软件辅助查看。cutter下载地址：<https://cutter.re/>，cutter github地址：<https://github.com/radareorg/cutter>
+#### 步骤二 查询hook函数的签名信息
+	
+通过 readelf -s libart.so，查找 ThreadList::SuspendAll 函数的签名信息。通过这个命令查询，会发现函数签名不全，被截取了。可以下载一个软件辅助查看。cutter下载地址：<https://cutter.re/>，cutter github地址：<https://github.com/radareorg/cutter>
 
-5、通过爱奇艺xhook工具进行hook
+#### 步骤三 通过爱奇艺xhook工具进行hook
 
 	static void (*suspend_all_origin)(char const *, bool);
 	static void suspend_all_proxy(char const *cause, bool long_suspend = false) {
@@ -85,7 +87,11 @@ hook的函数
 	}
 
 	    
- 6、完成了，用xhook进行native hook的操作。完整Demo地址：<https://github.com/xyzlf/NativeHookDemo>
+ 以上三步，就完成了native hook的操作。
+ 
+ 
+#### 完整Demo地址
+NativeHookDemo： <https://github.com/xyzlf/NativeHookDemo>
 
 ## 参考资料
 
@@ -98,7 +104,6 @@ Android Native Hook技术路线概述: <https://gtoad.github.io/2018/07/05/Andro
 爱奇艺xhook开源地址: <https://github.com/iqiyi/xHook>
 
 readelf elf文件格式分析: <https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/readelf.html>
-
 
 
 [1]: https://cloud.tencent.com/developer/article/1601496
