@@ -63,6 +63,7 @@ jarsigner -verbose -keystore {your.keystore} -signedjar {new-singed.apk}  {app-u
 
 jarsigner -verify -verbose -certs {apkpath} 
 
+
 jarsigner -verify -verbose:summary -certs {apkpath}
 
 {% endhighlight java %}
@@ -71,5 +72,9 @@ jarsigner -verify -verbose:summary -certs {apkpath}
 {% highlight java %}
 
 jarsigner -verify {apkpath}
+
+keytool -printcert -jarfile {apkpath}
+
+apksigner verify -v --print-certs
 
 {% endhighlight java %}
