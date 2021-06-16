@@ -75,6 +75,6 @@ jarsigner -verify {apkpath}
 
 keytool -printcert -jarfile {apkpath}
 
-apksigner verify -v --print-certs
+apksigner verify -v --print-certs {apkpath}
 
 {% endhighlight java %}
